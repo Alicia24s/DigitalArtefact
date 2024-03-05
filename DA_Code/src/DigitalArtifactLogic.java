@@ -31,13 +31,11 @@ import java.util.Scanner;
 
  
 
-    //Lab 3 & Lab 4
+        //Lab 3 & Lab 4
         boolean finished;
 
         //Lab 5 - changing the context --> Below I have called from another class to do my Option selection
-
         OptionSelection options = new OptionSelection();
-
 
 
         do{

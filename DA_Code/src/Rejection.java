@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
-//This is a Class that holds methods for users rejections
-//UserRejections: Cases in which the user says no or submits an answer that is out of context
-//Challenge: Create a way to take word in
-//Needed in the case that the user's answers are not what I want them to be
+
 public class Rejection {
 
+
+    //Called when the user prints nonsense
         public void unexpectedAnswer(){
 
-        System.out.println(null);
+        System.out.println("Sorry I dont understand pls try again");
         //UnexectedAnswer? Sorry I DONT UNDERSTAND try again please - Continue code
         //It happens again? Prompt 'pLEASE TRYAGAIN'
         //areYouSure? if 'not no' loop back into the code if no move onto the methods below
@@ -18,37 +17,45 @@ public class Rejection {
 
         
     //Called to give user another chance to continue 
-      //- Used in main java for people that do not want to take the quiz initially
-     // - Used in unexpectedAnswer() for the people who give terrible answers
-    */
+    
         public void areYouSure(){
-        //Are you sure you want to quit --> yes
+        //Are you sure you want to quit --> yes --> User feedback
         }
 
-    //Call this if user does not want to move forward
+
+    //Called when user is finished
+
         public void userfeedback(){
 
         Scanner scanner = new Scanner(System.in);
-        //Method Asking if user would give feedback
-        /*Questions
-         * 1. Good or bad experience
+        /*Method Asking if user would give feedback
+         *Questions
+         * 1. Good or bad experience etc etc
+         * 
+         * function to give option for personalised feedback
+         *
+         * completed? option for 1-5 star user review 
+         * 
+         * call questionnaire close out
+         * 
          */
-        //if yes print users feedback qs 1-5 least to most likely
-        //completed? userReview();
-         
+         }
 
-    }
 
-    //Called if the user left the questionnaire early --> Execute after are you sure
-    public void unfinishedFeeback(){
+    //Called as option for more personalised feedback -- Gives contacting options etc etc
+        
+        public void userReview(){
 
-    }
+            //Logic for review (If its only used once just delete this and slapp the logic into userFeedback)
+         }
 
-    public void questionnaireCloseOut(){
+    //Called to close out the questionnaire
+
+        public void questionnaireCloseOut(){
 
         //If you would like to take the test again navigate to (My Github Account)
         //Code saying thanks for your time then closing out your thing
-    }
+         }
 
 
 }
