@@ -2,15 +2,16 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
-        //Objects for game logic and Object to combat user 'breaking' the code 
-        DigitalArtifactLogic DigitalArtifact = new DigitalArtifactLogic();
+ 
+        //Questionnaire Logic Object
+        TestLogic DigitalArtifact = new TestLogic();
         Rejection UnexpectedInput = new Rejection();
 
-        //Beginning decision 
-        System.out.println("Are you ready to learn how to invest? (yes/no))");
-        Scanner usersDecision = new Scanner(System.in);
+        //Start of questionnaire (pUT THIS INTO TEST LOGIC INTO A NEW FUNCTION THEN CALL IT)
+        System.out.println("Are you ready to assess your financial literacy (yes/no))");
 
+        Scanner scanner = new Scanner(System.in);
+        String usersDecision = scanner.nextLine();
         String x = "yes";
 
     
@@ -23,11 +24,15 @@ public class App {
                     }
                 else{
 
-                //Method getting feedback in order to improve
+                //Method getting feedback in order to improve UX
                     UnexpectedInput.userfeedback();
 
                  }
+
+        System.out.println("Thank You!");
+        
+        //Print out users scores along with the date and (Challenge: Using machine learning API )
     
-        usersDecision.close();
+        scanner.close();
     }
 }
