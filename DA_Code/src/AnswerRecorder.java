@@ -2,7 +2,7 @@
 import java.util.List;
 import java.util.Arrays;
 
-public class RecordManagement {
+public class AnswerRecorder {
 
 /*
  * You will need : Getters and setters (To privitise personal info/Answers)

@@ -1,7 +1,5 @@
-import static java.lang.StringTemplate.STR;
 
-public class AnswerManager {
-    /*
+ /*
      * This is the logic for whether A users selection from the choices A-B is correct and what will happen
      * 
      * The parameters in each method will distinguish between each option pathway and the correct question switch so
@@ -9,10 +7,21 @@ public class AnswerManager {
      * 
      */
 
-     public void AnswerA(int option, String answer, boolean beginner, boolean intermediate, boolean advanced ){
+public class AnswerManager {
+
+    public void rightAnswer(){
+        //Put embedded switch statements that you've got repeated into here for right answers
+    }
+
+    public void wrongAnswer(){
+       //Put embeded switch statements that you've got repeated into here for wrong answers
+    }
+
+
+    public void AnswerA(int option, String answer, boolean beginner, boolean intermediate, boolean advanced ){
 
         //put a do while loop around this so that if they say anything mad it goes to default in the switch statement and repeats the q
-        switch (answer.toLowerCase()) {
+    switch (answer.toLowerCase()) {
     
     case "a":
     
@@ -26,7 +35,89 @@ public class AnswerManager {
      * 
      * Use getters and setters for the score manager stuff
      */
+
+     //get following if statement into a function rn
+    switch(option){
+        case 1:
+                    if (beginner){
+                    //call an advanced option 1 q 
+                    //add 1 point to scoreManager
+                    }
+                
+                    else if(intermediate){
+                    //call an advanced option 1 q
+                    //add 2 points to score manager
+                     }
+                     else if(advanced){
+                    //call an intermediate option 1 q
+                    //add 3 points to score manager
+                     }
     
+                 break;
+
+        case 2:
+        
+        if (beginner){
+            //call an advanced option 2 q 
+            //add 1 point to scoreManager
+            }
+        
+            else if(intermediate){
+            //call an advanced option 2 q
+            //add 2 points to score manager
+             }
+             else if(advanced){
+            //call an intermediate option 2 q
+            //add 3 points to score manager
+             }
+            
+
+
+        break;
+
+        case 3:
+        if (beginner){
+            //call an advanced option 3 q 
+            //add 1 point to scoreManager
+            }
+        
+            else if(intermediate){
+            //call an advanced option 3 q
+            //add 2 points to score manager
+             }
+             else if(advanced){
+            //call an intermediate option 3 q
+            //add 3 points to score manager
+             }
+
+        break;
+
+        case 4:
+
+        if (beginner){
+            //call an advanced option 4 q 
+            //add 1 point to scoreManager
+            }
+        
+            else if(intermediate){
+            //call an advanced option 4 q
+            //add 2 points to score manager
+             }
+             else if(advanced){
+            //call an intermediate option 4 q
+            //add 3 points to score manager
+             }
+
+        break;
+    }
+   
+
+
+
+
+
+
+
     break;
     
     case "d":

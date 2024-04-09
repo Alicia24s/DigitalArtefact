@@ -1,5 +1,3 @@
-import static java.lang.StringTemplate.STR;
-
 import java.util.Scanner;
 
 public class BegOption1 {
@@ -66,7 +64,6 @@ public class BegOption1 {
                         "");
 
                         //Get method from AnswerManager for A
-                        System.out.println("The answer is A: To minimise risk by spreading investments");
      }
 
 
