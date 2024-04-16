@@ -1,15 +1,10 @@
-public class O1INT {
-    /*
-     * Change to suit Intermediate qs using ChatGPT
-     * 
-     */
+import java.util.Scanner;
 
-     public void randomisesQuestionMethods(){
-        //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
-        //might need a loop to loop through if theyve been called already or not
-    }
+public class O1INT extends AnswerManager{
  
-    public void question1(){
+    public void question1(Scanner scanner){
+
+    String usersAnswer = scanner.nextLine();
       
      System.out.println("\tWhich of the following investments has the highest liquidity? \r\n" + //
                   "A) Real estate\r\n" + //
@@ -18,11 +13,14 @@ public class O1INT {
                   " D) Certificate of Deposit (CD)\r\n");
 
                   //"Answer: B) Stocks
+                  super.Answer(1, "b", usersAnswer, false, true, false);
       
      }
  
-     public void question2(){
-      
+     public void question2(Scanner scanner){
+        
+        String usersAnswer = scanner.nextLine();
+
          System.out.println(" 1.\tWhat is the difference between stocks and bonds?\r\n" + //
                           " A) Stocks represent ownership in a company, while bonds represent debt\r\n" + //
                           " B) Stocks pay fixed interest, while bonds pay dividends \r\n" + //
@@ -30,12 +28,15 @@ public class O1INT {
                           " D) Bonds are more liquid than stocks\r\n" + //
                           "" );
 
-                          //Answer: A) Stocks represent ownership in a company, while bonds represent debt
+                 //Answer: A) Stocks represent ownership in a company, while bonds represent debt
+            super.Answer(1, "a", usersAnswer, false, true, false);
 
      }
  
  
-      public void question3(){
+      public void question3(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
       
          System.out.println("1.\tWhat does the Rule of 72 determine?\r\n" + //
                           " A) The doubling time for an investment\r\n" + //
@@ -45,13 +46,16 @@ public class O1INT {
                           "");
 
                           //Answer: A) The doubling time for an investment
- 
+            super.Answer(1, "a", usersAnswer, false, true, false);
                          
       }
  
  
  
-     public void question4(){
+     public void question4(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
          System.out.println("1.\tWhich of the following is a measure of risk in an investment portfolio?\r\n" + //
                           " A) Beta \r\n" + //
                           "B) Dividend yield \r\n" + //
@@ -60,11 +64,16 @@ public class O1INT {
                           "");
 
                           //Answer: A) Beta
+
+                super.Answer(1, "a", usersAnswer, false, true, false);
  
      }
  
  
-     public void question5(){
+     public void question5(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
          System.out.println("\tWhat is the difference between nominal interest rate and real interest rate? \r\n" + //
                           "A) Nominal interest rate includes inflation, while real interest rate does not \r\n" + //
                           "B) Real interest rate includes inflation, while nominal interest rate does not\r\n" + //
@@ -72,11 +81,15 @@ public class O1INT {
                           "D) Nominal interest rate and real interest rate are the same\r\n" );
  
          //Answer: A) Nominal interest rate includes inflation, while real interest rate does not
+         super.Answer(1, "a", usersAnswer, false, true, false);
     
     }
  
     
-    public void question6(){
+    public void question6(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
      System.out.println("1.\tWhat is the purpose of the Sharpe ratio? \r\n" + //
                   "A) To measure the risk-adjusted return of an investment \r\n" + //
                   "B) To calculate the total return of an investment \r\n" + //
@@ -86,13 +99,14 @@ public class O1INT {
 
                   //Answer: A) To measure the risk-adjusted return of an investment
  
- 
+        super.Answer(1, "a", usersAnswer, false, true, false);
      //Get function AnswerManager A
  
  }
  
-    public void question7(){
- 
+    public void question7(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine(); 
      System.out.println("What is the present value of $500 to be received in two years with a discount rate of 5%? \r\n" + //
                   "A) $454.55 \r\n" + //
                   "B) $476.19\r\n" + //
@@ -100,6 +114,9 @@ public class O1INT {
                   "D) $510.00\r\n" + //
                   "" );
     //Answer: A) $454.55
+
+    super.Answer(1, "a", usersAnswer, false, true, false);
+
     }
 
 }

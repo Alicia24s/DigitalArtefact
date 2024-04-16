@@ -1,25 +1,7 @@
 import java.util.Scanner;
-import java.util.random.*;
 
-public class O1BEG {
+public class O1BEG extends AnswerManager{
  
-   AnswerManager answerManager = new AnswerManager();
-
-
-   public void questionSequencial(){
-
-    randomisesQuestionMethods();
-            
-   }
-
-   public void randomisesQuestionMethods(){
-
-      //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
-      //might need a loop to loop through if theyve been called already or not
-  }
-
-   //Switch all 
-
    public void question1(Scanner scanner){
     
     
@@ -36,7 +18,7 @@ public class O1BEG {
                 "\r\n");
 
                 //Answer is B
-                answerManager.Answer(1, "b", usersAnswer, true, false, false);
+                super.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
      
     }
@@ -57,7 +39,7 @@ public class O1BEG {
         );
         
         //Answers for B
-        answerManager.Answer(1, "b", usersAnswer, true, false, false);
+        super.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
 
     }
@@ -79,8 +61,8 @@ public class O1BEG {
                         "ncipal and also on the accumulated interest from previous periods\r\n" + //
                         "");
 
-                        //Get method from AnswerManager for A
-                        answerManager.Answer(1, "a", usersAnswer, true, false, false);
+                        //Get method from super for A
+                        super.Answer(1, "a", usersAnswer, true, false, false);
      }
 
 
@@ -100,7 +82,7 @@ public class O1BEG {
         "\r\n");
 
         //Get function for A
-        answerManager.Answer(1, "a", usersAnswer, true, false, false);
+        super.Answer(1, "a", usersAnswer, true, false, false);
     }
 
 
@@ -118,8 +100,8 @@ public class O1BEG {
         "D) Rate of Interest\r\n" + //
         "\r\n" );
 
-        //Get function AnswerManager C
-        answerManager.Answer(1, "c", usersAnswer, true, false, false);
+        //Get function super C
+        super.Answer(1, "c", usersAnswer, true, false, false);
    
    }
 
@@ -138,7 +120,7 @@ public class O1BEG {
     "D) Money received in the future is worth more than the same amount received today\r\n" + //
     "\r\n" );
 
-    answerManager.Answer(1, "a", usersAnswer, true, false, false);
+    super.Answer(1, "a", usersAnswer, true, false, false);
 
 }
 
@@ -159,7 +141,7 @@ public class O1BEG {
             );
 
     //get function for c
-    answerManager.Answer(1, "c", usersAnswer, true, false, false);
+    super.Answer(1, "c", usersAnswer, true, false, false);
 
    }
 

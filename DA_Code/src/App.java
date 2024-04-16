@@ -22,14 +22,14 @@ public class App extends TestLogic {
                 //Method that takes the questionnaire forward
                         DigitalArtifact.questionnaire();
 
-
-                        UnexpectedInput.userfeedback();
+e
+                        UnexpectedInput.userfeedback(scanner);
 
                     }
                 else{
 
                 //Method getting feedback in order to improve UX
-                    UnexpectedInput.userfeedback();
+                    UnexpectedInput.userfeedback(scanner);
 
                  }
 

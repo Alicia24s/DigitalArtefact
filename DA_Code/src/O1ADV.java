@@ -1,14 +1,7 @@
-public class O1ADV {
+public class O1ADV extends AnswerManager{
 
     //Insert Scanner so user can acc input stuff
 
-    AnswerManager answerManager = new AnswerManager();
-
-    public void randomisesQuestionMethods(){
-        //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
-        //might need a loop to loop through if theyve been called already or not
-    }
- 
     public void question1(){
       
      System.out.println("1.\tWhat is the formula for calculating the present value of a perpetuity?\r\n" + //
@@ -19,7 +12,7 @@ public class O1ADV {
                   "");
 
                   //Answer: A) PV = PMT / r
-           answerManager.Answer(1, "a", null, false, false, true);
+           super.Answer(1, "a", null, false, false, true);
  
      }
  
@@ -33,7 +26,7 @@ public class O1ADV {
                           "" );
                 
                           //Answer A) It states that the value of a company is not affected by its capital structure
-                          answerManager.Answer(1, "a", null, false, false, true);
+                          super.Answer(1, "a", null, false, false, true);
 
      }
  

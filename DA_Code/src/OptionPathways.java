@@ -13,10 +13,6 @@ public class OptionPathways {
         System.out.println("Time: Unlimited");
         System.out.println("Questions: 10");
     }
-    
-    public void questionnumbers(){
-
-    }
 
     //Option pathways and their overviews
     public void option1(int option){

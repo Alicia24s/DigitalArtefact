@@ -11,15 +11,17 @@ public class AnswerRightOrWrongLogic {
                     if (beginner){
 
                     //call an intermediate option 1 q (Need to rendomise the methods first)
+                    
                     randomOptionOne.RandomIntermediate();
                         
                     //add 1 point to scoreManager using getters and setters
                     
-                    //repeat throughout the other cases
+                    //add a switch statement for the rest of the classes
                     }
-                
                     else if(intermediate){
                     //call an advanced option 1 q (Need to randomise methods first)
+
+                    randomOptionOne.RandomAdvanced();
 
                     //add 2 points to score manager using getters and setters
 
@@ -27,6 +29,8 @@ public class AnswerRightOrWrongLogic {
                      }
                      else if(advanced){
                     //call an advanced option 1 q (Need to randomise mehods first)
+
+                    randomOptionOne.RandomIntermediate();
                     //add 3 points to score manager using getters and setters
                     //repeat throughout the other cases
                      }
@@ -84,17 +88,12 @@ public void wrongAnswer(int option, boolean beginner, boolean intermediate, bool
 
     switch(option){
     case 1:
-                if (beginner){
+                if (beginner || intermediate){
                 //call an beginner option 1 q (Need to rendomise the methods first)
-                //Repeat throughout the other cases
-                }
-            
-                else if(intermediate){
-                //call an beginner option 1 q (Need to randomise methods first)
-                //repeat throughout the other cases
-                 }
-                 else if(advanced){
+                  randomOptionOne.RandomBeginner();
+                }else if(advanced){
                 //call an beginner option 1 q (Need to randomise mehods first)
+                  randomOptionOne.RandomIntermediate();
                 //repeat throughout the other cases
                  }
 
