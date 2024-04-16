@@ -1,6 +1,7 @@
 public class AnswerRightOrWrongLogic {
 
     O1BEG option1 = new O1BEG();
+    OptionOneRandom randomOptionOne = new OptionOneRandom();
 
     public void rightAnswer(int option, boolean beginner, boolean intermediate, boolean advanced){
 
@@ -9,16 +10,19 @@ public class AnswerRightOrWrongLogic {
             case 1:
                     if (beginner){
 
-                    
-                        
                     //call an intermediate option 1 q (Need to rendomise the methods first)
+                    randomOptionOne.RandomIntermediate();
+                        
                     //add 1 point to scoreManager using getters and setters
-                    //Repeat throughout the other cases
+                    
+                    //repeat throughout the other cases
                     }
                 
                     else if(intermediate){
                     //call an advanced option 1 q (Need to randomise methods first)
+
                     //add 2 points to score manager using getters and setters
+
                     //repeat throughout the other cases
                      }
                      else if(advanced){

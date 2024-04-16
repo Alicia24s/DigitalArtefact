@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class App extends TestLogic {
     public static void main(String[] args) throws Exception {
  
         //Questionnaire Logic Object

@@ -11,7 +11,7 @@ public class OptionPathways {
 
         //if you make it to making it a GUI change this and have a counter
         System.out.println("Time: Unlimited");
-        System.out.println("Questions: 8");
+        System.out.println("Questions: 10");
     }
     
     public void questionnumbers(){
@@ -24,7 +24,7 @@ public class OptionPathways {
         //Basic Financial Concepts
         System.out.println("You have chosen option" + option );
         QuestionnaireOverview();
-         //Call the test you will do for them from another class
+         //Call the test you will do for them from Options pathways manager
 
     }
         
