@@ -1,4 +1,4 @@
-public class IntOption1 {
+public class O1INT {
     /*
      * Change to suit Intermediate qs using ChatGPT
      * 
@@ -101,6 +101,5 @@ public class IntOption1 {
                   "" );
     //Answer: A) $454.55
     }
- 
-    //Write out 3 more q functions here
+
 }

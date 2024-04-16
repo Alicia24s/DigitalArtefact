@@ -1,17 +1,29 @@
 import java.util.Scanner;
+import java.util.random.*;
 
-public class BegOption1 {
+public class O1BEG {
+ 
+   AnswerManager answerManager = new AnswerManager();
 
-   Scanner scanner = new Scanner(System.in);
 
+   public void questionSequencial(){
 
-   public void randomisesQuestionMethods(){
-       //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
-       //might need a loop to loop through if theyve been called already or not
+    randomisesQuestionMethods();
+            
    }
 
-   public void question1(){
-     
+   public void randomisesQuestionMethods(){
+
+      //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
+      //might need a loop to loop through if theyve been called already or not
+  }
+
+   //Switch all 
+
+   public void question1(Scanner scanner){
+    
+    
+    String usersAnswer = scanner.nextLine();
     System.out.println("What is compound interest?\r\n" + //
                 "\r\n" + //
                 " A) Interest calculated only on the principal amount \r\n" + //
@@ -24,12 +36,14 @@ public class BegOption1 {
                 "\r\n");
 
                 //Answer is B
+                answerManager.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
      
     }
 
-    public void question2(){
+    public void question2(Scanner scanner){
      
+        String usersAnswer = scanner.nextLine();
         System.out.println("Which of the following is an example of an asset?\r\n" + //
         "\r\n" + //
         " A) Loan \r\n" + //
@@ -43,13 +57,15 @@ public class BegOption1 {
         );
         
         //Answers for B
+        answerManager.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
 
     }
 
 
-     public void question3(){
-     
+     public void question3(Scanner scanner){
+        
+        String usersAnswer = scanner.nextLine();
         System.out.println("What is the purpose of diversification in investment?\r\n" + //
                         "\r\n" + //
                         " A)To minimise risk by spreading investments across different assets \r\n" + //
@@ -64,11 +80,14 @@ public class BegOption1 {
                         "");
 
                         //Get method from AnswerManager for A
+                        answerManager.Answer(1, "a", usersAnswer, true, false, false);
      }
 
 
 
-    public void question4(){
+    public void question4(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
         System.out.println("What does APR stand for?\r\n" + //
         "\r\n" + //
         " A)Annual Percentage Rate \r\n" + //
@@ -81,10 +100,13 @@ public class BegOption1 {
         "\r\n");
 
         //Get function for A
+        answerManager.Answer(1, "a", usersAnswer, true, false, false);
     }
 
 
-    public void question5(){
+    public void question5(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
         System.out.println("What does ROI stand for?\r\n" + //
         "\r\n" + //
         " A)Rate of investment \r\n" + //
@@ -97,11 +119,14 @@ public class BegOption1 {
         "\r\n" );
 
         //Get function AnswerManager C
+        answerManager.Answer(1, "c", usersAnswer, true, false, false);
    
    }
 
    
-   public void question6(){
+   public void question6(Scanner scanner){
+
+    String usersAnswer = scanner.nextLine();
     System.out.println("What is the time value of money?\r\n" + //
     "\r\n" + //
     " A) Money received today is worth more than the same amount received in the future \r\n" + //
@@ -113,13 +138,14 @@ public class BegOption1 {
     "D) Money received in the future is worth more than the same amount received today\r\n" + //
     "\r\n" );
 
-
-    //Get function AnswerManager A
+    answerManager.Answer(1, "a", usersAnswer, true, false, false);
 
 }
 
-   public void question7(){
+   public void question7(Scanner scanner){
 
+
+    String usersAnswer = scanner.nextLine();
     System.out.println("\r\n" + //
                 "What is liquidity in finance? \r\n" + //
                 "\r\n" + //
@@ -133,8 +159,8 @@ public class BegOption1 {
             );
 
     //get function for c
+    answerManager.Answer(1, "c", usersAnswer, true, false, false);
 
    }
 
-   //Write out 3 more q functions here
 }

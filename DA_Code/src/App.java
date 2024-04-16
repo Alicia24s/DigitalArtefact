@@ -5,6 +5,8 @@ public class App {
  
         //Questionnaire Logic Object
         TestLogic DigitalArtifact = new TestLogic();
+
+
         Rejection UnexpectedInput = new Rejection();
 
         //Start of questionnaire (pUT THIS INTO TEST LOGIC INTO A NEW FUNCTION THEN CALL IT)
@@ -19,6 +21,8 @@ public class App {
 
                 //Method that takes the questionnaire forward
                         DigitalArtifact.questionnaire();
+
+
                         UnexpectedInput.userfeedback();
 
                     }
@@ -31,7 +35,7 @@ public class App {
 
         System.out.println("Thank You!");
         
-        //Print out users scores along with the date and (Challenge: Using machine learning API )
+        //Print out users scores along with the date
     
         scanner.close();
     }

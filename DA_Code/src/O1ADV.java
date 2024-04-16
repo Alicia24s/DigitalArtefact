@@ -1,4 +1,9 @@
-public class AdvOption1 {
+public class O1ADV {
+
+    //Insert Scanner so user can acc input stuff
+
+    AnswerManager answerManager = new AnswerManager();
+
     public void randomisesQuestionMethods(){
         //insert a way to randomise these classes so that another class QuestionsAtoD can call it if you need to go down to beginner
         //might need a loop to loop through if theyve been called already or not
@@ -14,6 +19,7 @@ public class AdvOption1 {
                   "");
 
                   //Answer: A) PV = PMT / r
+           answerManager.Answer(1, "a", null, false, false, true);
  
      }
  
@@ -27,6 +33,7 @@ public class AdvOption1 {
                           "" );
                 
                           //Answer A) It states that the value of a company is not affected by its capital structure
+                          answerManager.Answer(1, "a", null, false, false, true);
 
      }
  
@@ -97,6 +104,6 @@ public class AdvOption1 {
             //Answer: C) Investors can consistently earn above-average returns
  
     }
- 
-    //Write out 3 more q functions here
+
+    //one more q
 }

@@ -4,16 +4,15 @@ import java.util.Scanner;
     public class TestLogic{
 
         //Object that stores users question and answer data
-        RecordManagement usersRecords = new RecordManagement();
-
+        PersonalInformation usersRecords = new PersonalInformation();
+        
+        Scanner scanner = new Scanner(System.in);
         
         //Move this into personal information.java and then call it through the recordmanagement.java class (Use getters and setters to privitise/Protect personalinfo)
         public void questionnaire(){
         
             boolean rightDetails;
         
-        
-            Scanner scanner = new Scanner(System.in);
 
             do{
 
@@ -54,6 +53,8 @@ import java.util.Scanner;
 
         //Lab 3 & Lab 4
         boolean finished;
+
+// Get the following into option pathways manager
 
         //Called from another class to do my Option selection
         OptionPathways options = new OptionPathways();
@@ -96,6 +97,8 @@ import java.util.Scanner;
                     default:
                         System.out.println(numberSelection + "is not a valid choice");
                     }
+
+                    
 
                         
                     System.out.println("Do you want to re-pick an option (yes/no)");
