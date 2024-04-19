@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public class O1ADV extends AnswerManager{
 
     //Insert Scanner so user can acc input stuff
 
-    public void question1(){
+    public void question1(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
       
      System.out.println("1.\tWhat is the formula for calculating the present value of a perpetuity?\r\n" + //
                   "A) PV = PMT / r \r\n" + //
@@ -12,11 +16,13 @@ public class O1ADV extends AnswerManager{
                   "");
 
                   //Answer: A) PV = PMT / r
-           super.Answer(1, "a", null, false, false, true);
+           super.Answer(1, "a", usersAnswer, false, false, true);
  
      }
  
-     public void question2(){
+     public void question2(Scanner scanner) {
+
+        String usersAnswer = scanner.nextLine();
       
          System.out.println("\tWhich of the following options best describes the Modigliani-Miller theorem?\r\n" + //
                           "\r\n" + //
@@ -26,12 +32,14 @@ public class O1ADV extends AnswerManager{
                           "" );
                 
                           //Answer A) It states that the value of a company is not affected by its capital structure
-                          super.Answer(1, "a", null, false, false, true);
+                          super.Answer(1, "a", usersAnswer, false, false, true);
+    }
+    
+ 
+ 
+      public void question3(Scanner scanner){
 
-     }
- 
- 
-      public void question3(){
+        String usersAnswer = scanner.nextLine();
       
          System.out.println("2.\tWhat does the term \"Beta\" measure in finance? \r\n" + //
                           "\r\n" + //
@@ -40,13 +48,17 @@ public class O1ADV extends AnswerManager{
                           " C) It measures the correlation between two securities or portfolios\r\n" + //
                           " D) It measures the unsystematic risk of a security or a portfolio\r\n" + //
                           "");
-                //Answer: A) It measures the systematic risk of a security or a portfolio in relation to the market
+                //Answer: A) It measures the systematic risk of a security or a portfolio in relation to the market(
+                super.Answer(1, "a", usersAnswer, false, false, true);
  
       }
  
  
  
-     public void question4(){
+     public void question4(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
          System.out.println("Which of the following is true about the Efficient Market Hypothesis (EMH)? \r\n" + //
                           "\r\n" + //
                           "A) It suggests that it is impossible to consistently outperform the market\r\n" + //
@@ -56,11 +68,16 @@ public class O1ADV extends AnswerManager{
                           "");
 
                 //Answer: A) It suggests that it is impossible to consistently outperform the market
+
+                super.Answer(1, "a", usersAnswer, false, false, true);
  
      }
  
  
-     public void question5(){
+     public void question5(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
          System.out.println("1.\tWhich of the following is NOT a factor affecting the Black-Scholes option pricing model? \r\n" + //
                           "A) Strike price \r\n" + //
                           "B) Dividend yield \r\n" + //
@@ -69,12 +86,16 @@ public class O1ADV extends AnswerManager{
                           "" );
 
                 //Answer: B) Dividend yield
+                super.Answer(1, "b", usersAnswer, false, false, true);
  
     
     }
  
     
-    public void question6(){
+    public void question6(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
+
      System.out.println("2.\tWhat is the primary purpose of financial leverage? \r\n" + //
                   "A) To increase the risk of a firm's operations\r\n" + //
                   " B) To decrease the volatility of a firm's earnings \r\n" + //
@@ -83,10 +104,13 @@ public class O1ADV extends AnswerManager{
                   "" );
 
                   //Answer: C) To increase the return on equity for shareholders
+                  super.Answer(1, "c", usersAnswer, false, false, true);
  
  }
  
-    public void question7(){
+    public void question7(Scanner scanner){
+
+        String usersAnswer = scanner.nextLine();
  
      System.out.println("2.\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
                   "A) All available information is reflected in the current stock price \r\n" + //
@@ -95,8 +119,9 @@ public class O1ADV extends AnswerManager{
                   "D) Stock prices follow a random pattern\r\n" + //
                   "" );
             //Answer: C) Investors can consistently earn above-average returns
+            super.Answer(1, "c", usersAnswer, false, false, true);
  
     }
 
-    //one more q
+    //one more q 
 }

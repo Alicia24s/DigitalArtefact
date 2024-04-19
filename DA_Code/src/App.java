@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
-public class App extends TestLogic {
+public class App {
     public static void main(String[] args) throws Exception {
  
         //Questionnaire Logic Object
         TestLogic DigitalArtifact = new TestLogic();
-
-
         Rejection UnexpectedInput = new Rejection();
 
         //Start of questionnaire (pUT THIS INTO TEST LOGIC INTO A NEW FUNCTION THEN CALL IT)
@@ -21,21 +19,19 @@ public class App extends TestLogic {
 
                 //Method that takes the questionnaire forward
                         DigitalArtifact.questionnaire();
-
-e
-                        UnexpectedInput.userfeedback(scanner);
+                        UnexpectedInput.userfeedback();
 
                     }
                 else{
 
                 //Method getting feedback in order to improve UX
-                    UnexpectedInput.userfeedback(scanner);
+                    UnexpectedInput.userfeedback();
 
                  }
 
         System.out.println("Thank You!");
         
-        //Print out users scores along with the date
+        //Print out users scores along with the date and (Challenge: Using machine learning API )
     
         scanner.close();
     }

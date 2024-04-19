@@ -15,8 +15,10 @@ public class AnswerManager {
 
 public void Answer(int option, String answer, String usersAnswer, boolean beginner, boolean intermediate, boolean advanced ){
     
-    //put a do while loop around this so that if they say anything mad it goes to default in the switch statement and repeats the q
-      
+    //put a do while loop so that this code doesn'r run till thine kingdom come
+
+  
+
     if (answer == usersAnswer.toLowerCase()){
 
     rightOrWrongLogic.rightAnswer(option, beginner, intermediate, advanced);
@@ -26,8 +28,10 @@ public void Answer(int option, String answer, String usersAnswer, boolean beginn
          rightOrWrongLogic.wrongAnswer(option, beginner, intermediate, advanced);
         
         }
+
   
-    }
 
 
+
+}
 }

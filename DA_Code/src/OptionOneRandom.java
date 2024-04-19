@@ -1,5 +1,6 @@
 import java.util.Random;
 
+
 public class OptionOneRandom {
 
     O1BEG beginnerQuestions = new O1BEG();
@@ -7,10 +8,7 @@ public class OptionOneRandom {
     O1ADV advancedQuestions = new O1ADV();
 
     /*
-     * Question --> is it possible to have all possible beginner questions in here but the only thing called is the one 
-     * from that particular option pathway??
-     * 
-     * As in how do I not repeat this file 4 times for each difficulty of question in each option pathway
+     *How in Jesus name will you stop running this code forever??? It loops perfectly
      * 
      */
 
@@ -69,29 +67,29 @@ public void RandomIntermediate(){
             break;
         case 2:
             // call method "b" here
-            intermediateQuestions.question1();
+            intermediateQuestions.question1(null);
             break;
         case 3: 
 
-           intermediateQuestions.question3();
+           intermediateQuestions.question3(null);
            break;
         case 4: 
-          intermediateQuestions.question4();
+          intermediateQuestions.question4(null);
 
         case 5: 
-          intermediateQuestions.question5();
+          intermediateQuestions.question5(null);
         
         break;
 
         case 6:
 
-        intermediateQuestions.question6();
+        intermediateQuestions.question6(null);
 
         break; 
 
         case 7:
 
-        intermediateQuestions.question7();
+        intermediateQuestions.question7(null);
         
         break;
         default:
@@ -107,33 +105,33 @@ public void RandomAdvanced(){
         case 1:
             // call method "a" here
 
-            advancedQuestions.question1();
+            advancedQuestions.question1(null);
             break;
         case 2:
             // call method "b" here
-            advancedQuestions.question1();
+            advancedQuestions.question2(null);
             break;
         case 3: 
 
-           advancedQuestions.question3();
+           advancedQuestions.question3(null);
            break;
         case 4: 
-          advancedQuestions.question4();
+          advancedQuestions.question4(null);
 
         case 5: 
-          advancedQuestions.question5();
+          advancedQuestions.question5(null);
         
         break;
 
         case 6:
 
-        advancedQuestions.question6();
+        advancedQuestions.question6(null);
 
         break; 
 
         case 7:
 
-        advancedQuestions.question7();
+        advancedQuestions.question7(null);
         
         break;
         default:
