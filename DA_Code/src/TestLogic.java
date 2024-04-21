@@ -101,7 +101,7 @@ import java.util.Scanner;
                     
 
                         
-                    System.out.println("Do you want to re-pick an option (yes/no)");
+                    System.out.println("Do you want to take another(yes/no)");
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");

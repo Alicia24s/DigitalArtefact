@@ -1,5 +1,12 @@
+import java.util.Scanner;
+
 public class OptionPathways {
 
+    O1BEG beginnerQuestions = new O1BEG();
+    O1INT intermediateQuestions = new O1INT();
+    O1ADV advancedQuestions = new O1ADV();
+
+    Scanner scanner = new Scanner(System.in);
     public void QuestionnaireOverview(){
 
         System.out.println("This assessment will score you on your financial knowledge in your chosen topic\r\n" + //
@@ -20,7 +27,9 @@ public class OptionPathways {
         //Basic Financial Concepts
         System.out.println("You have chosen option" + option );
         QuestionnaireOverview();
-         //Call the test you will do for them from Options pathways manager
+        beginnerQuestions.question1(scanner);
+         //Call Question 1
+         //Call score display
 
     }
         
@@ -29,7 +38,9 @@ public class OptionPathways {
         //Investment and Portfolio
         System.out.println("You have chosen option" + option);
         QuestionnaireOverview();
-        //Call the test you will do for them from another class
+    
+        //Call Question 1
+         //Call score display
 
     }
 
@@ -38,7 +49,8 @@ public class OptionPathways {
         //Financial Analysis and Valuation
         System.out.println("You have chosen option 3");
         QuestionnaireOverview();
-         //Call the test you will do for them from another class
+         //Call Question 1
+         //Call score display
 
     }
     
@@ -47,7 +59,8 @@ public class OptionPathways {
         //Corporate finance
         System.out.println("You have chosen option 4");
         QuestionnaireOverview();
-         //Call the test you will do for them from another class
+         //Call Question 1
+         //Call score display
 
     }
 

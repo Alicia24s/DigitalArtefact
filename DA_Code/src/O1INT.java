@@ -4,6 +4,8 @@ public class O1INT extends AnswerManager{
  
     public void question1(Scanner scanner){
 
+      if (answerCounter < 7) {
+
     String usersAnswer = scanner.nextLine();
       
      System.out.println("\tWhich of the following investments has the highest liquidity? \r\n" + //
@@ -14,10 +16,14 @@ public class O1INT extends AnswerManager{
 
                   //"Answer: B) Stocks
                   super.Answer(1, "b", usersAnswer, false, true, false);
-      
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
      }
  
      public void question2(Scanner scanner){
+      if (answerCounter < 7) {
         
         String usersAnswer = scanner.nextLine();
 
@@ -31,10 +37,17 @@ public class O1INT extends AnswerManager{
                  //Answer: A) Stocks represent ownership in a company, while bonds represent debt
             super.Answer(1, "a", usersAnswer, false, true, false);
 
+         }else{
+            System.out.println("This is the end of the Quizz");
+            //Output the score
+        }
+
      }
  
  
       public void question3(Scanner scanner){
+
+         if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
       
@@ -47,12 +60,19 @@ public class O1INT extends AnswerManager{
 
                           //Answer: A) The doubling time for an investment
             super.Answer(1, "a", usersAnswer, false, true, false);
+
+         }else{
+            System.out.println("This is the end of the Quizz");
+            //Output the score
+        }
                          
       }
  
  
  
      public void question4(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
 
@@ -66,11 +86,18 @@ public class O1INT extends AnswerManager{
                           //Answer: A) Beta
 
                 super.Answer(1, "a", usersAnswer, false, true, false);
+
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
  
      }
  
  
      public void question5(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
 
@@ -82,11 +109,18 @@ public class O1INT extends AnswerManager{
  
          //Answer: A) Nominal interest rate includes inflation, while real interest rate does not
          super.Answer(1, "a", usersAnswer, false, true, false);
+
+      }else{
+         System.out.println("This is the end of the Quizz");
+         //Output the score
+     }
     
     }
  
     
     public void question6(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
 
@@ -101,10 +135,17 @@ public class O1INT extends AnswerManager{
  
         super.Answer(1, "a", usersAnswer, false, true, false);
      //Get function AnswerManager A
+
+   }else{
+      System.out.println("This is the end of the Quizz");
+      //Output the score
+  }
  
  }
  
     public void question7(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine(); 
      System.out.println("What is the present value of $500 to be received in two years with a discount rate of 5%? \r\n" + //
@@ -116,6 +157,11 @@ public class O1INT extends AnswerManager{
     //Answer: A) $454.55
 
     super.Answer(1, "a", usersAnswer, false, true, false);
+
+   }else{
+      System.out.println("This is the end of the Quizz");
+      //Output the score
+  }
 
     }
 

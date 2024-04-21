@@ -4,7 +4,7 @@ public class O1BEG extends AnswerManager{
  
    public void question1(Scanner scanner){
     
-    
+    if (answerCounter < 7) {
     String usersAnswer = scanner.nextLine();
     System.out.println("What is compound interest?\r\n" + //
                 "\r\n" + //
@@ -20,11 +20,16 @@ public class O1BEG extends AnswerManager{
                 //Answer is B
                 super.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
-     
+    }else{
+        System.out.println("This is the end of the Quizz");
+        //Output the score
+    }
+
     }
 
     public void question2(Scanner scanner){
      
+        if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
         System.out.println("Which of the following is an example of an asset?\r\n" + //
         "\r\n" + //
@@ -41,12 +46,18 @@ public class O1BEG extends AnswerManager{
         //Answers for B
         super.Answer(1, "b", usersAnswer, true, false, false);
         //Call QuestionAtoD.java function for B
+    }else{
+        System.out.println("This is the end of the Quizz");
+        //Output the score
+    }
+
 
     }
 
 
      public void question3(Scanner scanner){
-        
+
+            if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
         System.out.println("What is the purpose of diversification in investment?\r\n" + //
                         "\r\n" + //
@@ -63,11 +74,18 @@ public class O1BEG extends AnswerManager{
 
                         //Get method from super for A
                         super.Answer(1, "a", usersAnswer, true, false, false);
+                    }else{
+                        System.out.println("This is the end of the Quizz");
+                        //Output the score
+                    }
+                
      }
 
 
 
     public void question4(Scanner scanner){
+
+        if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
         System.out.println("What does APR stand for?\r\n" + //
@@ -83,10 +101,17 @@ public class O1BEG extends AnswerManager{
 
         //Get function for A
         super.Answer(1, "a", usersAnswer, true, false, false);
+    }else{
+        System.out.println("This is the end of the Quizz");
+        //Output the score
+    }
+
     }
 
 
     public void question5(Scanner scanner){
+
+        if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
         System.out.println("What does ROI stand for?\r\n" + //
@@ -102,11 +127,18 @@ public class O1BEG extends AnswerManager{
 
         //Get function super C
         super.Answer(1, "c", usersAnswer, true, false, false);
+    }else{
+        System.out.println("This is the end of the Quizz");
+        //Output the score
+    }
+
    
    }
 
    
    public void question6(Scanner scanner){
+
+    if (answerCounter < 7) {
 
     String usersAnswer = scanner.nextLine();
     System.out.println("What is the time value of money?\r\n" + //
@@ -121,11 +153,17 @@ public class O1BEG extends AnswerManager{
     "\r\n" );
 
     super.Answer(1, "a", usersAnswer, true, false, false);
+}else{
+    System.out.println("This is the end of the Quizz");
+    //Output the score
+}
+
 
 }
 
    public void question7(Scanner scanner){
 
+    if (answerCounter < 7) {
 
     String usersAnswer = scanner.nextLine();
     System.out.println("\r\n" + //
@@ -142,6 +180,11 @@ public class O1BEG extends AnswerManager{
 
     //get function for c
     super.Answer(1, "c", usersAnswer, true, false, false);
+}else{
+    System.out.println("This is the end of the Quizz");
+    //Output the score
+}
+
 
    }
 

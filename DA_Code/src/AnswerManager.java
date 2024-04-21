@@ -12,13 +12,10 @@ public class AnswerManager {
 
     //Objects
     AnswerRightOrWrongLogic rightOrWrongLogic = new AnswerRightOrWrongLogic();
+    int answerCounter = 0;
 
 public void Answer(int option, String answer, String usersAnswer, boolean beginner, boolean intermediate, boolean advanced ){
     
-    //put a do while loop so that this code doesn'r run till thine kingdom come
-
-  
-
     if (answer == usersAnswer.toLowerCase()){
 
     rightOrWrongLogic.rightAnswer(option, beginner, intermediate, advanced);
@@ -29,9 +26,7 @@ public void Answer(int option, String answer, String usersAnswer, boolean beginn
         
         }
 
-  
 
-
-
+        answerCounter++;
 }
 }

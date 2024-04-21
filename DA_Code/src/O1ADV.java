@@ -6,6 +6,8 @@ public class O1ADV extends AnswerManager{
 
     public void question1(Scanner scanner){
 
+      if (answerCounter < 7) {
+
         String usersAnswer = scanner.nextLine();
       
      System.out.println("1.\tWhat is the formula for calculating the present value of a perpetuity?\r\n" + //
@@ -17,10 +19,17 @@ public class O1ADV extends AnswerManager{
 
                   //Answer: A) PV = PMT / r
            super.Answer(1, "a", usersAnswer, false, false, true);
+
+         }else{
+            System.out.println("This is the end of the Quizz");
+            //Output the score
+        }
  
      }
  
      public void question2(Scanner scanner) {
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
       
@@ -33,11 +42,18 @@ public class O1ADV extends AnswerManager{
                 
                           //Answer A) It states that the value of a company is not affected by its capital structure
                           super.Answer(1, "a", usersAnswer, false, false, true);
+
+                        }else{
+                           System.out.println("This is the end of the Quizz");
+                           //Output the score
+                       }
     }
     
  
  
       public void question3(Scanner scanner){
+
+         if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
       
@@ -50,12 +66,19 @@ public class O1ADV extends AnswerManager{
                           "");
                 //Answer: A) It measures the systematic risk of a security or a portfolio in relation to the market(
                 super.Answer(1, "a", usersAnswer, false, false, true);
+
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
  
       }
  
  
  
      public void question4(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
 
@@ -70,11 +93,18 @@ public class O1ADV extends AnswerManager{
                 //Answer: A) It suggests that it is impossible to consistently outperform the market
 
                 super.Answer(1, "a", usersAnswer, false, false, true);
+
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
  
      }
  
  
      public void question5(Scanner scanner){
+
+      if (answerCounter < 7) {
 
         String usersAnswer = scanner.nextLine();
 
@@ -87,14 +117,20 @@ public class O1ADV extends AnswerManager{
 
                 //Answer: B) Dividend yield
                 super.Answer(1, "b", usersAnswer, false, false, true);
+
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
  
     
     }
  
     
     public void question6(Scanner scanner){
-
+      if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
+
 
      System.out.println("2.\tWhat is the primary purpose of financial leverage? \r\n" + //
                   "A) To increase the risk of a firm's operations\r\n" + //
@@ -105,11 +141,17 @@ public class O1ADV extends AnswerManager{
 
                   //Answer: C) To increase the return on equity for shareholders
                   super.Answer(1, "c", usersAnswer, false, false, true);
+
+               }else{
+                  System.out.println("This is the end of the Quizz");
+                  //Output the score
+              }
  
  }
  
     public void question7(Scanner scanner){
 
+      if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
  
      System.out.println("2.\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
@@ -120,6 +162,11 @@ public class O1ADV extends AnswerManager{
                   "" );
             //Answer: C) Investors can consistently earn above-average returns
             super.Answer(1, "c", usersAnswer, false, false, true);
+
+         }else{
+            System.out.println("This is the end of the Quizz");
+            //Output the score
+        }
  
     }
 
