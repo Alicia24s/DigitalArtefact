@@ -30,20 +30,16 @@ import java.util.Scanner;
 
 
             //Find out how to get this into Personal information
-            Object[] infoString = {firstname, surname, email, years};
-            String[] infoPrefix = {"Firstname: ", "Surname:", "email ", "Age:"};
+            System.out.println("firstname:" + firstname);
+            System.out.println("surname:" + surname);
+            System.out.println("Age:" + years);
+            System.out.println("Email:" + email);
 
-            System.out.println("is this information correct? (yes/no)");
-
-            for (int i = 0; i < infoString.length; i++){
-
-                for(int j = 0; j < infoPrefix.length; j++){
-                System.out.println(infoPrefix[j] + infoString[i]);
-                }
-
-            }
+            System.out.println("Is this your details?");
                
             String userContinuation = scanner.nextLine();  
+
+
             rightDetails = userContinuation.equalsIgnoreCase("no");
 
 
