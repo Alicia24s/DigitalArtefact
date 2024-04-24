@@ -1,6 +1,11 @@
-public class AnswerRightOrWrongLogic {
+/*
+This class is the underlying logic of the answer manager class iT IS ONLY COMPLETE FOR OPTION 1 QUESTIONS
+*/
 
-    OptionOneRandom randomOptionOne = new OptionOneRandom();
+
+public class RightOrWrongLogic  {
+
+  Option1 option1 = new Option1();
 
     public void rightAnswer(int option, boolean beginner, boolean intermediate, boolean advanced){
 
@@ -11,7 +16,7 @@ public class AnswerRightOrWrongLogic {
 
                     //call an intermediate option 1 q (Need to rendomise the methods first)
                     
-                    randomOptionOne.RandomIntermediate();
+                    option1.intermediate();
                         
                     //add 1 point to scoreManager using getters and setters
                     
@@ -20,7 +25,7 @@ public class AnswerRightOrWrongLogic {
                     else if(intermediate){
                     //call an advanced option 1 q (Need to randomise methods first)
 
-                    randomOptionOne.RandomAdvanced();
+                    option1.advanced();
 
                     //add 2 points to score manager using getters and setters
 
@@ -29,7 +34,7 @@ public class AnswerRightOrWrongLogic {
                      else if(advanced){
                     //call an advanced option 1 q (Need to randomise mehods first)
 
-                    randomOptionOne.RandomIntermediate();
+                     option1.intermediate();
                     //add 3 points to score manager using getters and setters
                     //repeat throughout the other cases
                      }
@@ -88,12 +93,12 @@ public void wrongAnswer(int option, boolean beginner, boolean intermediate, bool
     switch(option){
     case 1:
                 if (beginner || intermediate){
-                //call an beginner option 1 q (Need to rendomise the methods first)
-                  randomOptionOne.RandomBeginner();
+          
+                  option1.beginner();
                 }else if(advanced){
-                //call an beginner option 1 q (Need to randomise mehods first)
-                  randomOptionOne.RandomIntermediate();
-                //repeat throughout the other cases
+                
+                  option1.intermediate();
+                
                  }
 
              break;

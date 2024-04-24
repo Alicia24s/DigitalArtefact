@@ -52,7 +52,7 @@ import java.util.Scanner;
 // Get the following into option pathways manager
 
         //Called from another class to do my Option selection
-        OptionPathways options = new OptionPathways();
+        PathwayManager options = new PathwayManager();
 
 
       //  do{

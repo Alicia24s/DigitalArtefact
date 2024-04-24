@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
-public class OptionPathways {
+public class PathwayManager {
 
-    O1BEG beginnerQuestions = new O1BEG();
-    O1INT intermediateQuestions = new O1INT();
-    O1ADV advancedQuestions = new O1ADV();
 
     Scanner scanner = new Scanner(System.in);
     public void QuestionnaireOverview(){
@@ -27,7 +24,7 @@ public class OptionPathways {
         //Basic Financial Concepts
         System.out.println("You have chosen option" + option );
         QuestionnaireOverview();
-        beginnerQuestions.question1();
+
          //Call Question 1
          //Call score display
 

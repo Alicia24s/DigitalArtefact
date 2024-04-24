@@ -8,15 +8,9 @@
      * 
      */
 
-public class AnswerManager {
+public class AnswerManager{
 
-    //Objects
-    AnswerRightOrWrongLogic rightOrWrongLogic;
-    int answerCounter;
-
-    public AnswerManager(){
-        rightOrWrongLogic = new AnswerRightOrWrongLogic();
-    }
+RightOrWrongLogic rightOrWrongLogic = new RightOrWrongLogic();
 
 public void Answer(int option, String answer, String usersAnswer, boolean beginner, boolean intermediate, boolean advanced ){
     
@@ -31,6 +25,6 @@ public void Answer(int option, String answer, String usersAnswer, boolean beginn
         }
 
 
-        answerCounter++;
+        
 }
 }

@@ -1,17 +1,19 @@
 import java.util.Random;
 
-;public class Option1 extends Option {
+public class Option1{
     /*
-     * What will I do for answers a b c and d
+     * Questions for option 1
      * 
      */
  // mAKe a random number from 1 to 8 andd then put it into the switch statement 
-
+ AnswerManager answerManager = new AnswerManager();
  private Random randomGenerator = new Random();
 
-    public void beginnerQuestions(){
-
+ private String result;
         
+    public String beginner(){
+            
+   
         int randNumber = randomGenerator.nextInt(8);
 
           switch (randNumber) {
@@ -31,13 +33,13 @@ import java.util.Random;
             "\r\n");
 
             //Answer is B
-
-            super.Answer(1, "b", usersAnswer, true, false, false);
+            result = "b";
+            
+            break;
                 
-                break;
+               
             case 2:
 
-            String usersAnswer = scanner.nextLine();
             System.out.println("What is the purpose of diversification in investment?\r\n" + //
                             "\r\n" + //
                             " A)To minimise risk by spreading investments across different assets \r\n" + //
@@ -51,18 +53,15 @@ import java.util.Random;
                             "ncipal and also on the accumulated interest from previous periods\r\n" + //
                             "");
     
-                            //Get method from super for A
-                            super.Answer(1, "a", usersAnswer, true, false, false);
+                            //Answer is A
 
-
-
-            
+            result = "a";
 
             break;
 
             case 3:
 
-            String usersAnswer = scanner.nextLine();
+           
             System.out.println("What does APR stand for?\r\n" + //
             "\r\n" + //
             " A)Annual Percentage Rate \r\n" + //
@@ -71,39 +70,42 @@ import java.util.Random;
             "\r\n" + //
             " C) Annual Payment Ratio \r\n" + //
             "\r\n" + //
-            "D) Annual Principal Return \r\n" + //
+            "D) Annual Principal result = \r\n" + //
             "\r\n");
     
             //Get function for A
-            super.Answer(1, "a", usersAnswer, true, false, false);
 
 
+
+            result = "a";
 
             break;
 
             case 4:
 
             
-        String usersAnswer = scanner.nextLine();
+       
         System.out.println("What does ROI stand for?\r\n" + //
         "\r\n" + //
         " A)Rate of investment \r\n" + //
         "\r\n" + //
         "B) Rate  of inflation\r\n" + //
         "\r\n" + //
-        " C)Return on Investment \r\n" + //
+        " C)result = on Investment \r\n" + //
         "\r\n" + //
         "D) Rate of Interest\r\n" + //
         "\r\n" );
 
         //Get function super C
-        super.Answer(1, "c", usersAnswer, true, false, false);
+       
+
+            result = "c";
 
             break;
 
             case 5:
 
-            String usersAnswer = scanner.nextLine();
+           
             System.out.println("What is the time value of money?\r\n" + //
             "\r\n" + //
             " A) Money received today is worth more than the same amount received in the future \r\n" + //
@@ -115,11 +117,13 @@ import java.util.Random;
             "D) Money received in the future is worth more than the same amount received today\r\n" + //
             "\r\n" );
 
+            result = "a";
+
             break;
 
             case 6:
 
-            String usersAnswer = scanner.nextLine();
+           
             System.out.println("\r\n" + //
                         "What is liquidity in finance? \r\n" + //
                         "\r\n" + //
@@ -133,13 +137,15 @@ import java.util.Random;
                     );
         
             //get function for c
-            super.Answer(1, "c", usersAnswer, true, false, false);
+           
+
+            result = "c";
 
             break;
 
             case 7:
 
-            String usersAnswer = scanner.nextLine();
+           
         System.out.println("Which of the following is an example of an asset?\r\n" + //
         "\r\n" + //
         " A) Loan \r\n" + //
@@ -153,19 +159,25 @@ import java.util.Random;
         );
         
         //Answers for B
-        super.Answer(1, "b", usersAnswer, true, false, false);
-        //Call QuestionAtoD.java function for B
-
+        
 
             
+            result = "b";
+
             break;
           
             default:
-                break;
+                result = "error in OPTION1JAVA ";
           }
+
+          return result;
     }
 
-    public void intermediateQuestions(){
+
+
+
+
+    public String intermediate(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -180,8 +192,10 @@ import java.util.Random;
             " D) Certificate of Deposit (CD)\r\n");
 
             //"Answer: B) Stocks
-            super.Answer(1, "b", usersAnswer, false, true, false);
+           
                 
+                result = "b";
+
                 break;
             case 2:
 
@@ -193,8 +207,9 @@ import java.util.Random;
             "" );
 
              //Answer: A) Stocks represent ownership in a company, while bonds represent debt
-            super.Answer(1, "a", usersAnswer, false, true, false);
+        
 
+            result = "a";
             break;
 
             case 3:
@@ -207,8 +222,9 @@ import java.util.Random;
             "");
 
             //Answer: A) The doubling time for an investment
-                super.Answer(1, "a", usersAnswer, false, true, false);
+            
 
+            result = "a";
             break;
 
             case 4:
@@ -217,13 +233,12 @@ import java.util.Random;
             " A) Beta \r\n" + //
             "B) Dividend yield \r\n" + //
             "C) Earnings per share (EPS) \r\n" + //
-            "D) Return on Investment (ROI)\r\n" + //
+            "D) result = on Investment (ROI)\r\n" + //
             "");
 
             //Answer: A) Beta
 
-                super.Answer(1, "a", usersAnswer, false, true, false);
-
+            result = "a";
             break;
 
             case 5:
@@ -236,24 +251,25 @@ import java.util.Random;
                         "D) Nominal interest rate and real interest rate are the same\r\n" );
 
             //Answer: A) Nominal interest rate includes inflation, while real interest rate does not
-            super.Answer(1, "a", usersAnswer, false, true, false);
 
+            result = "a";
             break;
 
             case 6:
 
             
                  System.out.println("1.\tWhat is the purpose of the Sharpe ratio? \r\n" + //
-                     "A) To measure the risk-adjusted return of an investment \r\n" + //
-                     "B) To calculate the total return of an investment \r\n" + //
+                     "A) To measure the risk-adjusted result = of an investment \r\n" + //
+                     "B) To calculate the total result = of an investment \r\n" + //
                      "C) To determine the liquidity of an investment\r\n" + //
                     " D) To evaluate the long-term growth potential of an investment\r\n" + //
                      "" );
 
-                      //Answer: A) To measure the risk-adjusted return of an investment
+                      //Answer: A) To measure the risk-adjusted result = of an investment
 
-                    super.Answer(1, "a", usersAnswer, false, true, false);
+                
 
+            result = "a";
             break;
 
             case 7:
@@ -266,17 +282,20 @@ import java.util.Random;
             "" );
                 //Answer: A) $454.55
 
-                super.Answer(1, "a", usersAnswer, false, true, false);
             
+            
+            result = "a";
             break;
           
             default:
-                break;
+                
           }
+
+          return "Please enter your answer A,B,C, or D";
 
     }
     
-    public void advancedManager(){
+    public String advanced(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -292,21 +311,24 @@ import java.util.Random;
             "");
 
             //Answer: A) PV = PMT / r
-                super.Answer(1, "a", usersAnswer, false, false, true);
+               
 
+                result = "a";
                 break;
+
             case 2:
 
             System.out.println("\tWhich of the following options best describes the Modigliani-Miller theorem?\r\n" + //
             "\r\n" + //
             " A) It states that the value of a company is not affected by its capital structure B) It provides a method for calculating the optimal capital structure for a company \r\n" + //
             "C) It explains how investors can arbitrage between different securities to earn riskless profits \r\n" + //
-            "D) It determines the relationship between risk and return in a portfolio\r\n" + //
+            "D) It determines the relationship between risk and result = in a portfolio\r\n" + //
             "" );
   
             //Answer A) It states that the value of a company is not affected by its capital structure
-            super.Answer(1, "a", usersAnswer, false, false, true);
+           
 
+            result = "a";
             break;
 
             case 3:
@@ -320,8 +342,9 @@ import java.util.Random;
             "");
 
             //Answer: A) It measures the systematic risk of a security or a portfolio in relation to the market(
-            super.Answer(1, "a", usersAnswer, false, false, true);
+           
 
+            result = "a";
             break;
 
             case 4:
@@ -337,8 +360,9 @@ import java.util.Random;
 
                 //Answer: A) It suggests that it is impossible to consistently outperform the market
 
-                super.Answer(1, "a", usersAnswer, false, false, true);
+               
 
+            result = "a";
             break;
 
             case 5:
@@ -350,9 +374,10 @@ import java.util.Random;
             "D) Risk-free rate\r\n" + //
             "" );
 
-  //Answer: B) Dividend yield
-  super.Answer(1, "b", usersAnswer, false, false, true);
+            //Answer: B) Dividend yield
+ 
 
+            result = "b";
             break;
 
             case 6:
@@ -360,13 +385,14 @@ import java.util.Random;
             System.out.println("2.\tWhat is the primary purpose of financial leverage? \r\n" + //
             "A) To increase the risk of a firm's operations\r\n" + //
             " B) To decrease the volatility of a firm's earnings \r\n" + //
-            "C) To increase the return on equity for shareholders \r\n" + //
+            "C) To increase the result = on equity for shareholders \r\n" + //
             "D) To decrease the cost of debt financing for a firm\r\n" + //
             "" );
 
-            //Answer: C) To increase the return on equity for shareholders
-            super.Answer(1, "c", usersAnswer, false, false, true);
+            //Answer: C) To increase the result = on equity for shareholders
+           
 
+            result = "c";
             break;
 
             case 7:
@@ -374,19 +400,26 @@ import java.util.Random;
             System.out.println("2.\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
             "A) All available information is reflected in the current stock price \r\n" + //
             "B) Future stock price movements are unpredictable \r\n" + //
-            "C) Investors can consistently earn above-average returns \r\n" + //
+            "C) Investors can consistently earn above-average result =s \r\n" + //
             "D) Stock prices follow a random pattern\r\n" + //
             "" );
 
-            //Answer: C) Investors can consistently earn above-average returns
-            super.Answer(1, "c", usersAnswer, false, false, true);
+            //Answer: C) Investors can consistently earn above-average result =s
+           
             
-            break;
-          
+            result = "c";
+          break;
+
             default:
-                break;
+                
           }
 
+          return "Please enter your answer A,B,C, or D";
+
+    }
+
+       public String getCorrectAnswer(){   
+        return result;
     }
 
     
