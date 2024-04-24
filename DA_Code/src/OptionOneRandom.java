@@ -8,7 +8,12 @@ public class OptionOneRandom {
     O1ADV advancedQuestions = new O1ADV();
 
     /*
-     *How in Jesus name will you stop running this code forever??? It loops perfectly
+     *
+     * 
+     * 5PUT THE ENTIRE QUESTION FROM O1-4(into each case) ++++++
+     *
+     * 
+     * 
      * 
      */
 
@@ -19,35 +24,35 @@ public class OptionOneRandom {
         int randNumber = randomGenerator.nextInt(8);
         switch(randNumber) {
             case 1:
-                // call method "a" here
+                // P
 
-                beginnerQuestions.question1(null);
+                beginnerQuestions.question1();
                 break;
             case 2:
                 // call method "b" here
-                beginnerQuestions.question2(null);
+                beginnerQuestions.question2();
                 break;
             case 3: 
 
-               beginnerQuestions.question3(null);
+               beginnerQuestions.question3();
                break;
             case 4: 
-              beginnerQuestions.question4(null);
+              beginnerQuestions.question4();
 
             case 5: 
-              beginnerQuestions.question5(null);
+              beginnerQuestions.question5();
             
             break;
 
             case 6:
 
-            beginnerQuestions.question6(null);
+            beginnerQuestions.question6();
 
             break; 
 
             case 7:
 
-            beginnerQuestions.question7(null);
+            beginnerQuestions.question7();
             
             break;
             default:
@@ -63,33 +68,33 @@ public void RandomIntermediate(){
         case 1:
             // call method "a" here
 
-            beginnerQuestions.question1(null);
+            beginnerQuestions.question1();
             break;
         case 2:
             // call method "b" here
-            intermediateQuestions.question1(null);
+            intermediateQuestions.question1();
             break;
         case 3: 
 
-           intermediateQuestions.question3(null);
+           intermediateQuestions.question3();
            break;
         case 4: 
-          intermediateQuestions.question4(null);
+          intermediateQuestions.question4();
 
         case 5: 
-          intermediateQuestions.question5(null);
+          intermediateQuestions.question5();
         
         break;
 
         case 6:
 
-        intermediateQuestions.question6(null);
+        intermediateQuestions.question6();
 
         break; 
 
         case 7:
 
-        intermediateQuestions.question7(null);
+        intermediateQuestions.question7();
         
         break;
         default:
@@ -105,33 +110,33 @@ public void RandomAdvanced(){
         case 1:
             // call method "a" here
 
-            advancedQuestions.question1(null);
+            advancedQuestions.question1();
             break;
         case 2:
             // call method "b" here
-            advancedQuestions.question2(null);
+            advancedQuestions.question2();
             break;
         case 3: 
 
-           advancedQuestions.question3(null);
+           advancedQuestions.question3();
            break;
         case 4: 
-          advancedQuestions.question4(null);
+          advancedQuestions.question4();
 
         case 5: 
-          advancedQuestions.question5(null);
+          advancedQuestions.question5();
         
         break;
 
         case 6:
 
-        advancedQuestions.question6(null);
+        advancedQuestions.question6();
 
         break; 
 
         case 7:
 
-        advancedQuestions.question7(null);
+        advancedQuestions.question7();
         
         break;
         default:

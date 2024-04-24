@@ -1,6 +1,5 @@
 public class AnswerRightOrWrongLogic {
 
-    O1BEG option1 = new O1BEG();
     OptionOneRandom randomOptionOne = new OptionOneRandom();
 
     public void rightAnswer(int option, boolean beginner, boolean intermediate, boolean advanced){

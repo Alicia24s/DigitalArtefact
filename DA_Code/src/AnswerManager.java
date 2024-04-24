@@ -11,12 +11,16 @@
 public class AnswerManager {
 
     //Objects
-    AnswerRightOrWrongLogic rightOrWrongLogic = new AnswerRightOrWrongLogic();
-    int answerCounter = 0;
+    AnswerRightOrWrongLogic rightOrWrongLogic;
+    int answerCounter;
+
+    public AnswerManager(){
+        rightOrWrongLogic = new AnswerRightOrWrongLogic();
+    }
 
 public void Answer(int option, String answer, String usersAnswer, boolean beginner, boolean intermediate, boolean advanced ){
     
-    if (answer == usersAnswer.toLowerCase()){
+    if (answer.equals(usersAnswer.toLowerCase())){
 
     rightOrWrongLogic.rightAnswer(option, beginner, intermediate, advanced);
 

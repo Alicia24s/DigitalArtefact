@@ -27,7 +27,7 @@ public class OptionPathways {
         //Basic Financial Concepts
         System.out.println("You have chosen option" + option );
         QuestionnaireOverview();
-        beginnerQuestions.question1(scanner);
+        beginnerQuestions.question1();
          //Call Question 1
          //Call score display
 

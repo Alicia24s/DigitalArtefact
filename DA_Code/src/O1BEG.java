@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 public class O1BEG extends AnswerManager{
- 
-   public void question1(Scanner scanner){
+    Scanner scanner = new Scanner(System.in);
+
+   public void question1(){
     
     if (answerCounter < 7) {
     String usersAnswer = scanner.nextLine();
@@ -27,7 +28,7 @@ public class O1BEG extends AnswerManager{
 
     }
 
-    public void question2(Scanner scanner){
+    public void question2(){
      
         if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
@@ -55,7 +56,7 @@ public class O1BEG extends AnswerManager{
     }
 
 
-     public void question3(Scanner scanner){
+     public void question3(){
 
             if (answerCounter < 7) {
         String usersAnswer = scanner.nextLine();
@@ -83,7 +84,7 @@ public class O1BEG extends AnswerManager{
 
 
 
-    public void question4(Scanner scanner){
+    public void question4(){
 
         if (answerCounter < 7) {
 
@@ -109,7 +110,7 @@ public class O1BEG extends AnswerManager{
     }
 
 
-    public void question5(Scanner scanner){
+    public void question5(){
 
         if (answerCounter < 7) {
 
@@ -136,7 +137,7 @@ public class O1BEG extends AnswerManager{
    }
 
    
-   public void question6(Scanner scanner){
+   public void question6(){
 
     if (answerCounter < 7) {
 
@@ -161,7 +162,7 @@ public class O1BEG extends AnswerManager{
 
 }
 
-   public void question7(Scanner scanner){
+   public void question7(){
 
     if (answerCounter < 7) {
 

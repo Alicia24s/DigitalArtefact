@@ -40,8 +40,7 @@ import java.util.Scanner;
             String userContinuation = scanner.nextLine();  
 
 
-            rightDetails = userContinuation.equalsIgnoreCase("no");
-
+            rightDetails = userContinuation.equalsIgnoreCase("yes");
 
         }    while(!rightDetails);
              
@@ -56,7 +55,7 @@ import java.util.Scanner;
         OptionPathways options = new OptionPathways();
 
 
-        do{
+      //  do{
 
             System.out.println("Please select (1-4)");
             System.out.println("Option 1: Basic Finance Concepts");
@@ -97,13 +96,15 @@ import java.util.Scanner;
                     
 
                         
-                    System.out.println("Do you want to take another(yes/no)");
+     /*               System.out.println("Do you want to take another(yes/no)");
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");
 
 
             }while(!finished);
+
+    */
 
  
         System.out.println("Thanks so much goodbye");
