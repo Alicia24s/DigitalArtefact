@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Option1{
     /*
-     * Questions for option 1
+     * Questions for option 1 - basic financial concepts
      * 
      */
  // mAKe a random number from 1 to 8 andd then put it into the switch statement 
@@ -50,7 +50,6 @@ public class Option1{
                             "\r\n" + //
                             "D) To decrease taxes on investment income\r\n" + //
                             "\r\n" + //
-                            "ncipal and also on the accumulated interest from previous periods\r\n" + //
                             "");
     
                             //Answer is A
