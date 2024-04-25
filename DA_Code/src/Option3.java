@@ -8,7 +8,7 @@ public class Option3 {
  */
     private Random randomGenerator = new Random();
 
-    private String result;
+    protected String result;
            
        public String beginner(){
                

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PathwayManager {
 
-
+    OptionManager optionManager = new OptionManager();
     Scanner scanner = new Scanner(System.in);
     public void QuestionnaireOverview(){
 
@@ -15,7 +15,8 @@ public class PathwayManager {
 
         //if you make it to making it a GUI change this and have a counter
         System.out.println("Time: Unlimited");
-        System.out.println("Questions: 10");
+        System.out.println("Questions: 10\r\n");
+        System.out.println("");
     }
 
     //Option pathways and their overviews
@@ -24,8 +25,7 @@ public class PathwayManager {
         //Basic Financial Concepts
         System.out.println("You have chosen option" + option );
         QuestionnaireOverview();
-
-         //Call Question 1
+        optionManager.option1();
          //Call score display
 
     }
@@ -35,18 +35,18 @@ public class PathwayManager {
         //Investment and Portfolio
         System.out.println("You have chosen option" + option);
         QuestionnaireOverview();
-    
-        //Call Question 1
+        optionManager.option2();
          //Call score display
 
     }
 
     public void option3(int option){
 
-        //Financial Analysis and Valuation
+        //Financial Literacy
+
         System.out.println("You have chosen option 3");
         QuestionnaireOverview();
-         //Call Question 1
+        optionManager.option3();
          //Call score display
 
     }
@@ -54,9 +54,11 @@ public class PathwayManager {
     public void option4(int option){
         
         //Corporate finance
+
         System.out.println("You have chosen option 4");
         QuestionnaireOverview();
-         //Call Question 1
+        optionManager.option4();
+
          //Call score display
 
     }

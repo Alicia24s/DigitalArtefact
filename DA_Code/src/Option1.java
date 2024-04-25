@@ -9,8 +9,8 @@ public class Option1{
 
  private Random randomGenerator = new Random();
 
- private String result;
-        
+ public String result;
+
     public String beginner(){
             
    

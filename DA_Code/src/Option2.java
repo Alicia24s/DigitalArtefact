@@ -3,12 +3,10 @@ import java.util.Random;
 public class Option2 {
 
     //Option 2 - Investment and portfolio
-     
 
-     AnswerManager answerManager = new AnswerManager();
      private Random randomGenerator = new Random();
     
-     private String result;
+     protected String result;
             
         public String beginner(){
                 

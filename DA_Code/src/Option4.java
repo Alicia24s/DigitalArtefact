@@ -2,14 +2,11 @@ import java.util.Random;
 
 public class Option4{
 
- //Option 2 - Investment and portfolio
-
- /*
+/*
  * THERE ARE PLACEHOLDER QUESTIONS IN HERE PLEASE CHANGE THEM IN LINE WITH THE TOPIC INSIDE OF 
  * PathwaysManager.java
  * 
  */
-     
 
 
  private Random randomGenerator = new Random();

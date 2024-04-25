@@ -25,6 +25,8 @@ import java.util.Scanner;
             System.out.println("Age:");
                  int years = scanner.nextInt();
  
+            scanner.nextLine();
+            
             System.out.println("E-mail");
                  String email = scanner.nextLine();
 
@@ -49,13 +51,11 @@ import java.util.Scanner;
         //Lab 3 & Lab 4
         boolean finished;
 
-// Get the following into option pathways manager
-
-        //Called from another class to do my Option selection
+    //Called from another class to do my Option selection
         PathwayManager options = new PathwayManager();
 
 
-      //  do{
+      do{
 
             System.out.println("Please select (1-4)");
             System.out.println("Option 1: Basic Finance Concepts");
@@ -71,22 +71,22 @@ import java.util.Scanner;
 
                     case 1:
                         options.option1(numberSelection);
-                        //Insert steps for the logic sequencial
+                        
                         break;
 
                     case 2:
                         options.option2(numberSelection); 
-                        //Insert steps for the logic sequencial                       
+                                               
                         break;
                         
                     case 3:
                         options.option3(numberSelection);
-                         //Insert steps for the logic sequencial
+                         
                         break;
 
                     case 4:
                         options.option4(numberSelection);
-                         //Insert steps for the logic sequencial
+                         
                         break;
 
                     default:
@@ -96,7 +96,7 @@ import java.util.Scanner;
                     
 
                         
-     /*               System.out.println("Do you want to take another(yes/no)");
+                 System.out.println("Do you want to take another(yes/no)");
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");
@@ -104,11 +104,10 @@ import java.util.Scanner;
 
             }while(!finished);
 
-    */
 
  
         System.out.println("Thanks so much goodbye");
-        //Insert the logic for feedback/closeout and all of that
+        
         scanner.close();
 
     }
