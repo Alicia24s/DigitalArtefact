@@ -6,7 +6,7 @@ public class Option1{
      * 
      */
  // mAKe a random number from 1 to 8 andd then put it into the switch statement 
- AnswerManager answerManager = new AnswerManager();
+
  private Random randomGenerator = new Random();
 
  private String result;

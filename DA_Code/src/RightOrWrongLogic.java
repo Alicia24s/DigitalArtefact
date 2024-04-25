@@ -14,8 +14,7 @@ public class RightOrWrongLogic  {
             case 1:
                     if (beginner){
 
-                    //call an intermediate option 1 q (Need to rendomise the methods first)
-                    
+      
                     option1.intermediate();
                         
                     //add 1 point to scoreManager using getters and setters

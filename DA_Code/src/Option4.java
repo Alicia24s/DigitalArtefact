@@ -2,21 +2,29 @@ import java.util.Random;
 
 public class Option4{
 
- 
- AnswerManager answerManager = new AnswerManager();
+ //Option 2 - Investment and portfolio
+
+ /*
+ * THERE ARE PLACEHOLDER QUESTIONS IN HERE PLEASE CHANGE THEM IN LINE WITH THE TOPIC INSIDE OF 
+ * PathwaysManager.java
+ * 
+ */
+     
+
+
  private Random randomGenerator = new Random();
 
-    public void beginner(String usersAnswer){
-            
-    
+ private String result;
         
+    public String beginner(){
+            
+   
         int randNumber = randomGenerator.nextInt(8);
 
           switch (randNumber) {
             case 1:
 
             //Question 1
-            String rightAnswer = "b";
 
             System.out.println("What is compound interest?\r\n" + //
             "\r\n" + //
@@ -30,10 +38,11 @@ public class Option4{
             "\r\n");
 
             //Answer is B
-            answerManager.Answer(1, rightAnswer, usersAnswer, true, false, false);
-
+            result = "b";
+            
+            break;
                 
-                break;
+               
             case 2:
 
             System.out.println("What is the purpose of diversification in investment?\r\n" + //
@@ -46,10 +55,11 @@ public class Option4{
                             "\r\n" + //
                             "D) To decrease taxes on investment income\r\n" + //
                             "\r\n" + //
-                            "ncipal and also on the accumulated interest from previous periods\r\n" + //
                             "");
     
                             //Answer is A
+
+            result = "a";
 
             break;
 
@@ -64,12 +74,14 @@ public class Option4{
             "\r\n" + //
             " C) Annual Payment Ratio \r\n" + //
             "\r\n" + //
-            "D) Annual Principal Return \r\n" + //
+            "D) Annual Principal result = \r\n" + //
             "\r\n");
     
             //Get function for A
 
 
+
+            result = "a";
 
             break;
 
@@ -83,13 +95,15 @@ public class Option4{
         "\r\n" + //
         "B) Rate  of inflation\r\n" + //
         "\r\n" + //
-        " C)Return on Investment \r\n" + //
+        " C)result = on Investment \r\n" + //
         "\r\n" + //
         "D) Rate of Interest\r\n" + //
         "\r\n" );
 
         //Get function super C
        
+
+            result = "c";
 
             break;
 
@@ -106,6 +120,8 @@ public class Option4{
             "\r\n" + //
             "D) Money received in the future is worth more than the same amount received today\r\n" + //
             "\r\n" );
+
+            result = "a";
 
             break;
 
@@ -126,6 +142,8 @@ public class Option4{
         
             //get function for c
            
+
+            result = "c";
 
             break;
 
@@ -148,14 +166,22 @@ public class Option4{
         
 
             
+            result = "b";
+
             break;
           
             default:
-                break;
+                result = "error in OPTION1JAVA ";
           }
+
+          return result;
     }
 
-    public void intermediate(){
+
+
+
+
+    public String intermediate(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -172,6 +198,8 @@ public class Option4{
             //"Answer: B) Stocks
            
                 
+                result = "b";
+
                 break;
             case 2:
 
@@ -185,6 +213,7 @@ public class Option4{
              //Answer: A) Stocks represent ownership in a company, while bonds represent debt
         
 
+            result = "a";
             break;
 
             case 3:
@@ -199,6 +228,7 @@ public class Option4{
             //Answer: A) The doubling time for an investment
             
 
+            result = "a";
             break;
 
             case 4:
@@ -207,11 +237,12 @@ public class Option4{
             " A) Beta \r\n" + //
             "B) Dividend yield \r\n" + //
             "C) Earnings per share (EPS) \r\n" + //
-            "D) Return on Investment (ROI)\r\n" + //
+            "D) result = on Investment (ROI)\r\n" + //
             "");
 
             //Answer: A) Beta
 
+            result = "a";
             break;
 
             case 5:
@@ -225,22 +256,24 @@ public class Option4{
 
             //Answer: A) Nominal interest rate includes inflation, while real interest rate does not
 
+            result = "a";
             break;
 
             case 6:
 
             
                  System.out.println("1.\tWhat is the purpose of the Sharpe ratio? \r\n" + //
-                     "A) To measure the risk-adjusted return of an investment \r\n" + //
-                     "B) To calculate the total return of an investment \r\n" + //
+                     "A) To measure the risk-adjusted result = of an investment \r\n" + //
+                     "B) To calculate the total result = of an investment \r\n" + //
                      "C) To determine the liquidity of an investment\r\n" + //
                     " D) To evaluate the long-term growth potential of an investment\r\n" + //
                      "" );
 
-                      //Answer: A) To measure the risk-adjusted return of an investment
+                      //Answer: A) To measure the risk-adjusted result = of an investment
 
                 
 
+            result = "a";
             break;
 
             case 7:
@@ -255,15 +288,18 @@ public class Option4{
 
             
             
+            result = "a";
             break;
           
             default:
-                break;
+                
           }
+
+          return "Please enter your answer A,B,C, or D";
 
     }
     
-    public void advanced(){
+    public String advanced(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -281,19 +317,22 @@ public class Option4{
             //Answer: A) PV = PMT / r
                
 
+                result = "a";
                 break;
+
             case 2:
 
             System.out.println("\tWhich of the following options best describes the Modigliani-Miller theorem?\r\n" + //
             "\r\n" + //
             " A) It states that the value of a company is not affected by its capital structure B) It provides a method for calculating the optimal capital structure for a company \r\n" + //
             "C) It explains how investors can arbitrage between different securities to earn riskless profits \r\n" + //
-            "D) It determines the relationship between risk and return in a portfolio\r\n" + //
+            "D) It determines the relationship between risk and result = in a portfolio\r\n" + //
             "" );
   
             //Answer A) It states that the value of a company is not affected by its capital structure
            
 
+            result = "a";
             break;
 
             case 3:
@@ -309,6 +348,7 @@ public class Option4{
             //Answer: A) It measures the systematic risk of a security or a portfolio in relation to the market(
            
 
+            result = "a";
             break;
 
             case 4:
@@ -326,6 +366,7 @@ public class Option4{
 
                
 
+            result = "a";
             break;
 
             case 5:
@@ -340,6 +381,7 @@ public class Option4{
             //Answer: B) Dividend yield
  
 
+            result = "b";
             break;
 
             case 6:
@@ -347,13 +389,14 @@ public class Option4{
             System.out.println("2.\tWhat is the primary purpose of financial leverage? \r\n" + //
             "A) To increase the risk of a firm's operations\r\n" + //
             " B) To decrease the volatility of a firm's earnings \r\n" + //
-            "C) To increase the return on equity for shareholders \r\n" + //
+            "C) To increase the result = on equity for shareholders \r\n" + //
             "D) To decrease the cost of debt financing for a firm\r\n" + //
             "" );
 
-            //Answer: C) To increase the return on equity for shareholders
+            //Answer: C) To increase the result = on equity for shareholders
            
 
+            result = "c";
             break;
 
             case 7:
@@ -361,18 +404,28 @@ public class Option4{
             System.out.println("2.\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
             "A) All available information is reflected in the current stock price \r\n" + //
             "B) Future stock price movements are unpredictable \r\n" + //
-            "C) Investors can consistently earn above-average returns \r\n" + //
+            "C) Investors can consistently earn above-average result =s \r\n" + //
             "D) Stock prices follow a random pattern\r\n" + //
             "" );
 
-            //Answer: C) Investors can consistently earn above-average returns
+            //Answer: C) Investors can consistently earn above-average result =s
            
             
-            break;
-          
+            result = "c";
+          break;
+
             default:
-                break;
+                
           }
 
+          return "Please enter your answer A,B,C, or D";
+
     }
+
+       public String getCorrectAnswer(){   
+        return result;
+    }
+
+    
+    
 }

@@ -12,6 +12,9 @@ public class AnswerManager{
 
 RightOrWrongLogic rightOrWrongLogic = new RightOrWrongLogic();
 
+public boolean right;
+public boolean wrong;
+
 public void Answer(int option, String answer, String usersAnswer, boolean beginner, boolean intermediate, boolean advanced ){
     
     if (answer.equals(usersAnswer.toLowerCase())){
