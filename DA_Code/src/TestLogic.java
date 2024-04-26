@@ -93,10 +93,10 @@ import java.util.Scanner;
                         System.out.println(numberSelection + "is not a valid choice");
                     }
 
-                    
+                    System.out.println("Thanks so much for taking the quiz");
+                    System.out.println("null");
+                    System.out.println("Do you want to take another(yes/no)");
 
-                        
-                 System.out.println("Do you want to take another(yes/no)");
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");
@@ -106,7 +106,7 @@ import java.util.Scanner;
 
 
  
-        System.out.println("Thanks so much goodbye");
+        System.out.println("THANK YOU FOR TAKING THE QUIZ <3");
         
         scanner.close();
 

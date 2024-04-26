@@ -20,6 +20,7 @@ public class OptionManager {
     
    RightOrWrongLogic rightOrWrongLogic = new RightOrWrongLogic();
 
+   //Questions for each option
     Option1 option1 = new Option1();
     Option2 option2 = new Option2();
     Option3 option3 = new Option3();
@@ -30,110 +31,84 @@ public class OptionManager {
 
    //Counter to make sure the quiz only run for 7 questions
    int counter = 0;
-  
-   
-   boolean right;
-
    //Sequence for option 1 pathway questions
-
-   
     public void option1(){
       
+                
         int number = 1;
 
-        while (counter <8){
-
-            String beginnerQuestion = option1.beginner();
-            String intermediateQuestion = option1.intermediate();
-            String advancedQuestion = option1.advanced();
-
-           
+        do{
 
             switch (number){
                    case 1: //beginner
-
-                       do{
+                 
+                    String beginnerQuestion = option1.beginner();
+                        String usersAnswer = scanner.nextLine();
                             System.out.println(beginnerQuestion);
+                        
 
-                             String usersAnswer = scanner.nextLine();
+                                if(usersAnswer.equals(option1.getCorrectAnswer())) {   
+                            
+                                    rightOrWrongLogic.rightAnswer(true, false, false);
+                                    number = 2;
+                                    
+                                    } else{
 
-                             if(usersAnswer.equals(option1.result)) {   
-                       
-                            rightOrWrongLogic.rightAnswer(true, false, false);
-                            right = true;
-                            number = 2;
-                             
-                        } else{
-
-                            rightOrWrongLogic.wrongAnswer(true, false, false);
-                            number = 1;
-                        }
+                                            rightOrWrongLogic.wrongAnswer(true, false, false);
+                                            number = 1;
+                                        }
                
                 counter++;
-             
-            }while(!right);
-
-                   break;
+                break;
 
                    case 2: //intermediate
-
-                    do{
+                   
+                        String intermediateQuestion = option1.intermediate();  
+                            String usersAnswer2 = scanner.nextLine();
                             System.out.println(intermediateQuestion);
 
-                             String usersAnswer = scanner.nextLine();
-
-                             if(usersAnswer.equals(option1.result)) {   
-                       
-                            rightOrWrongLogic.rightAnswer(false, true, false);
-                            right = true;
-                            number = 3;
-                             
-                        } else{
+                                if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                             
-                            rightOrWrongLogic.wrongAnswer(false, true, false);
-                            number = 1;
-                        }
+                                    rightOrWrongLogic.rightAnswer(false, true, false);
+                                    number = 3;
+                                    
+                                    } else{
+                                    
+                                        rightOrWrongLogic.wrongAnswer(false, true, false);
+                                        number = 1;
+                                        }
                
                 counter++;
-             
-            }while(!right);
 
-                   break;
+                break;
 
                    case 3:
 
-                   do{
+                    String advancedQuestion = option1.advanced();
+                        String usersAnswer3 = scanner.nextLine();
                             System.out.println(advancedQuestion);
-
-                             String usersAnswer = scanner.nextLine();
-
-                             if(usersAnswer.equals(option1.result)) {   
-                       
-                            rightOrWrongLogic.rightAnswer(false, false, true);
-                            right = true;
-                            number = 3;
-                             
-                        }else{
-                            
-                            rightOrWrongLogic.wrongAnswer(false, false, true);
-                            number = 2;
-                        }
+                        
+                            if(usersAnswer3.equals(option1.getCorrectAnswer())) {   
+                        
+                                rightOrWrongLogic.rightAnswer(false, false, true);
+                                number = 3;
+                                
+                                }else{
+                                
+                                    rightOrWrongLogic.wrongAnswer(false, false, true);
+                                    number = 2;
+                                }
                
                 counter++;
-             
-            }while(!right);
-
-                   break;
+               break;
 
           
            
             }
 
-            right = false;
-
+        }while(counter <8);
     }
 
-}
 
 
 public void option2(){

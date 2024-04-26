@@ -12,14 +12,13 @@ public class Option1{
  public String result;
 
     public String beginner(){
-            
+        
+        //Switch statement switches through questions returning result 
    
-        int randNumber = randomGenerator.nextInt(8);
-
+        int randNumber = randomGenerator.nextInt(7);
+      
           switch (randNumber) {
             case 1:
-
-            //Question 1
 
             System.out.println("What is compound interest?\r\n" + //
             "\r\n" + //
