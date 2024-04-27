@@ -6,27 +6,24 @@ This class is the underlying logic of the answer manager class iT IS ONLY COMPLE
 public class RightOrWrongLogic  {
 
   Option1 option1 = new Option1();
+  scoreCalculator scoreCalculator = new scoreCalculator();
+  
 
-    public void rightAnswer(boolean beginner, boolean intermediate, boolean advanced){
+  public void rightAnswer(boolean beginner, boolean intermediate, boolean advanced){
 
-                    if (beginner){
-                        
+              if (beginner){     
                     //add 1 point to scoreManager using getters and setters
-                
+                     
                     }
                     else if(intermediate){
 
-                    //add 2 points to score manager using getters and setters
+                        //add 2 points to score manager using getters and setters
 
                      }
-                     else if(advanced){
-                  
-                    //add 3 points to score manager using getters and setters
-                     //Repeat the above comments throughout the rest of the class
-                     }
-    
-              
-
+                        else if(advanced){  
+                        //add 3 points to score manager using getters and setters 
+                          
+                          }
     }
 
 

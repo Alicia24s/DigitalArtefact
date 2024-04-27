@@ -1,3 +1,7 @@
-public class scoreCalculator {
-    // class to calculate the financial score --> just aaa
+
+    public class scoreCalculator extends scoreManager {
+    
+        // class to calculate the financial score 
+ 
 }
+    
