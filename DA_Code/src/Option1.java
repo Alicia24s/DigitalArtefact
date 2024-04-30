@@ -11,7 +11,7 @@ public class Option1{
 
  public String result;
 
-    public String beginner(){
+    public void beginner(){
         
         //Switch statement switches through questions returning result 
    
@@ -163,19 +163,11 @@ public class Option1{
             result = "b";
 
             break;
-          
-            default:
-                result = "error in OPTION1JAVA ";
           }
 
-          return result;
     }
 
-
-
-
-
-    public String intermediate(){
+    public void intermediate(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -284,16 +276,11 @@ public class Option1{
             
             result = "a";
             break;
-          
-            default:
                 
           }
-
-          return "Please enter your answer A,B,C, or D";
-
     }
     
-    public String advanced(){
+    public void advanced(){
 
         int randNumber = randomGenerator.nextInt(8);
 
@@ -406,14 +393,8 @@ public class Option1{
            
             
             result = "c";
-          break;
-
-            default:
-                
-          }
-
-          return "Please enter your answer A,B,C, or D";
-
+           break;     
+        }
     }
 
        public String getCorrectAnswer(){   

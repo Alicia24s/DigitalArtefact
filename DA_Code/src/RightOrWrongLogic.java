@@ -1,45 +1,42 @@
 /*
 This class is the underlying logic of the answer manager class iT IS ONLY COMPLETE FOR OPTION 1 QUESTIONS
-*/
+*/  
+
+      public class RightOrWrongLogic  {
+
+        
+         scoreManager scoreManager = new scoreManager();
+
+              public void rightAnswer(boolean beginner, boolean intermediate, boolean advanced){
+
+                          if (beginner){     
+                                //add 1 point to scoreManager using getters and setters
+
+                              // scoreCalculator.setScoreRecord(1);
+                                
+                             } 
+                                else if(intermediate){
+                                  //add 2 points to score manager using getters and setters
+                                  
+                                  //scoreCalculator.setScoreRecord(2);
+
+                                }
+                                    else if(advanced){  
+                                    //add 3 points to score manager using getters and setters 
+
+                                       //scoreManager._setScoreRecord(3);
+                                      
+                                      } 
+                }
 
 
-public class RightOrWrongLogic  {
+      public void wrongAnswer(boolean beginner, boolean intermediate, boolean advanced){
 
-  Option1 option1 = new Option1();
-  scoreCalculator scoreCalculator = new scoreCalculator();
-  
+         // scoreCalculator.setScoreRecord(0);
 
-  public void rightAnswer(boolean beginner, boolean intermediate, boolean advanced){
-
-              if (beginner){     
-                    //add 1 point to scoreManager using getters and setters
-                     
-                    }
-                    else if(intermediate){
-
-                        //add 2 points to score manager using getters and setters
-
-                     }
-                        else if(advanced){  
-                        //add 3 points to score manager using getters and setters 
-                          
-                          }
-    }
-
-
-public void wrongAnswer(boolean beginner, boolean intermediate, boolean advanced){
+            }
+      
+      
+      }
 
     
-    if (beginner || intermediate){
-       // null for q
-        }
-  
-           
-           else if(advanced){
-            //null for q
-           }
-        
- 
-
-      }
-  }

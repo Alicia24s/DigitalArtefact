@@ -42,10 +42,8 @@ public class OptionManager {
             switch (number){
                    case 1: //beginner
                  
-                    String beginnerQuestion = option1.beginner();
+                    option1.beginner();
                         String usersAnswer = scanner.nextLine();
-                            System.out.println(beginnerQuestion);
-                        
 
                                 if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
@@ -63,9 +61,8 @@ public class OptionManager {
 
                    case 2: //intermediate
                    
-                        String intermediateQuestion = option1.intermediate();  
+                      option1.intermediate();  
                             String usersAnswer2 = scanner.nextLine();
-                            System.out.println(intermediateQuestion);
 
                                 if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                             
@@ -84,12 +81,11 @@ public class OptionManager {
 
                    case 3:
 
-                    String advancedQuestion = option1.advanced();
+                   option1.advanced();
                         String usersAnswer3 = scanner.nextLine();
-                            System.out.println(advancedQuestion);
                         
                             if(usersAnswer3.equals(option1.getCorrectAnswer())) {   
-                        
+                                
                                 rightOrWrongLogic.rightAnswer(false, false, true);
                                 number = 3;
                                 

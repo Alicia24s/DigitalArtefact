@@ -14,22 +14,51 @@ public class PersonalInformation {
      * (Give the user a chance to refactor their personal information in TestLogic.Java by returning encrypted personal info)
      * 
      */
-
     private String _firstname;
     private String _surname;
     private int _years;
     private String _email;
+
+public void usersPersonalinfo(Scanner scanner){
+
+       // Sets and stores users personal information
      
-    Scanner scanner = new Scanner(System.in);
+
+            System.out.println("FirstName:");
+               String firstname = scanner.nextLine();
+               set_firstname(firstname);
+       
+            System.out.println("Surname:");
+               String surname = scanner.nextLine();
+               set_surname(surname);
+       
+            System.out.println("Age:");
+                int years = scanner.nextInt();
+                set_years(years);
+
+            scanner.nextLine();
+       
+            System.out.println("E-mail:");
+                String email = scanner.nextLine();
+                set_email(email);
+       
+       
+           System.out.println("Your recorded details:");
+           System.out.println("firstname: " + get_firstname());
+           System.out.println("surname: " + get_surname());
+           System.out.println("Age:" + get_years());
+           System.out.println("E-mail:" + get_email());
+       
+           }
 
 
     //Setters
     public void set_firstname(String _firstname){
-          this._firstname = _firstname.replaceFirst(_firstname, "***");
+          this._firstname = _firstname;
     }
 
     public void set_surname(String _surname){
-     this._surname = _surname.replaceFirst(_surname, "***");
+     this._surname = _surname;
      }
 
      public void set_years(int _years){
@@ -37,7 +66,7 @@ public class PersonalInformation {
     }
 
     public void set_email(String _email){
-     this._firstname = _firstname.replaceFirst(_firstname, "***");
+     this._email = _email;
     }
 
     public String get_firstname(){
@@ -57,35 +86,6 @@ public class PersonalInformation {
     }
 
 
-    // Sets and stores users personal information
-    public void usersPersonalinfo(){
-
-     System.out.println("FirstName:");
-        String firstname = scanner.nextLine();
-        set_firstname(firstname);
-
-     System.out.println("Surname:");
-        String surname = scanner.nextLine();
-        set_surname(surname);
-
-     System.out.println("Age:");
-         int years = scanner.nextInt();
-         set_years(years);
-
-     System.out.println("E-mail:");
-         String email = scanner.nextLine();
-         set_email(email);
-
-    scanner.close();
-
-    }
-
-    public void returnUserInfo(){
-
-     // do a system .out.print ln for all the grtters with encrypted data
-     System.out.println();
-    }
-
-
+ 
      
 }
