@@ -115,15 +115,223 @@ public class OptionManager {
 
 public void option2(){
   //same code as the one in option1() but tailor to option 2
+               
+  int number = 1;
+
+  do{
+
+      switch (number){
+             case 1: //beginner
+           
+              option2.beginner();
+                  String usersAnswer = scanner.nextLine();
+
+                          if(usersAnswer.equals(option2.getCorrectAnswer())) {   
+                      
+                              rightOrWrongLogic.rightAnswer(true, false, false);
+                              number = 2;
+                              
+                              } else{
+
+                                      rightOrWrongLogic.wrongAnswer(true, false, false);
+                                      number = 1;
+                                  }
+         
+          counter++;
+          break;
+
+             case 2: //intermediate
+             
+                option2.intermediate();  
+                      String usersAnswer2 = scanner.nextLine();
+
+                          if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
+                      
+                              rightOrWrongLogic.rightAnswer(false, true, false);
+                              number = 3;
+                              
+                              } else{
+                              
+                                  rightOrWrongLogic.wrongAnswer(false, true, false);
+                                  number = 1;
+                                  }
+         
+          counter++;
+
+          break;
+
+             case 3:
+
+             option2.advanced();
+                  String usersAnswer3 = scanner.nextLine();
+                  
+                      if(usersAnswer3.equals(option2.getCorrectAnswer())) {   
+                          
+                          rightOrWrongLogic.rightAnswer(false, false, true);
+                          number = 3;
+                          
+                          }else{
+                          
+                              rightOrWrongLogic.wrongAnswer(false, false, true);
+                              number = 2;
+                          }
+         
+          counter++;
+         break;
+
+    
+     
+      }
+
+  }while(counter <8);
 }
 
 public void option3(){
-    //same code as the one in option1() but tailor to option 2
+    //same code as the one in option1() but tailor to option 
+                 
+    int number = 1;
+
+    do{
+
+        switch (number){
+               case 1: //beginner
+             
+                option3.beginner();
+                    String usersAnswer = scanner.nextLine();
+
+                            if(usersAnswer.equals(option3.getCorrectAnswer())) {   
+                        
+                                rightOrWrongLogic.rightAnswer(true, false, false);
+                                number = 2;
+                                
+                                } else{
+
+                                        rightOrWrongLogic.wrongAnswer(true, false, false);
+                                        number = 1;
+                                    }
+           
+            counter++;
+            break;
+
+               case 2: //intermediate
+               
+                  option3.intermediate();  
+                        String usersAnswer2 = scanner.nextLine();
+
+                            if(usersAnswer2.equals(option3.getCorrectAnswer())) {   
+                        
+                                rightOrWrongLogic.rightAnswer(false, true, false);
+                                number = 3;
+                                
+                                } else{
+                                
+                                    rightOrWrongLogic.wrongAnswer(false, true, false);
+                                    number = 1;
+                                    }
+           
+            counter++;
+
+            break;
+
+               case 3:
+
+               option3.advanced();
+                    String usersAnswer3 = scanner.nextLine();
+                    
+                        if(usersAnswer3.equals(option3.getCorrectAnswer())) {   
+                            
+                            rightOrWrongLogic.rightAnswer(false, false, true);
+                            number = 3;
+                            
+                            }else{
+                            
+                                rightOrWrongLogic.wrongAnswer(false, false, true);
+                                number = 2;
+                            }
+           
+            counter++;
+           break;
+
+      
+       
+        }
+
+    }while(counter <8);
+
 
 }
 
 public void option4(){
-    //same code as the one in option1() but tailor to option 2
+    //same code as the one in option1() but tailor to option 4
+                 
+    int number = 1;
+
+    do{
+
+        switch (number){
+               case 1: //beginner
+             
+                option4.beginner();
+                    String usersAnswer = scanner.nextLine();
+
+                            if(usersAnswer.equals(option4.getCorrectAnswer())) {   
+                        
+                                rightOrWrongLogic.rightAnswer(true, false, false);
+                                number = 2;
+                                
+                                } else{
+
+                                        rightOrWrongLogic.wrongAnswer(true, false, false);
+                                        number = 1;
+                                    }
+           
+            counter++;
+            break;
+
+               case 2: //intermediate
+               
+                  option4.intermediate();  
+                        String usersAnswer2 = scanner.nextLine();
+
+                            if(usersAnswer2.equals(option4.getCorrectAnswer())) {   
+                        
+                                rightOrWrongLogic.rightAnswer(false, true, false);
+                                number = 3;
+                                
+                                } else{
+                                
+                                    rightOrWrongLogic.wrongAnswer(false, true, false);
+                                    number = 1;
+                                    }
+           
+            counter++;
+
+            break;
+
+               case 3:
+
+               option4.advanced();
+                    String usersAnswer3 = scanner.nextLine();
+                    
+                        if(usersAnswer3.equals(option4.getCorrectAnswer())) {   
+                            
+                            rightOrWrongLogic.rightAnswer(false, false, true);
+                            number = 3;
+                            
+                            }else{
+                            
+                                rightOrWrongLogic.wrongAnswer(false, false, true);
+                                number = 2;
+                            }
+           
+            counter++;
+           break;
+
+      
+       
+        }
+
+    }while(counter <8);
 
 }
 
