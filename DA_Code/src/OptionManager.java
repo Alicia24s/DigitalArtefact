@@ -1,4 +1,10 @@
+
 import java.util.Scanner;
+import Options.Option1;
+import Options.Option2;
+import Options.Option3;
+import Options.Option4;
+
 /* Stuff to do
  *
  *  Fix the sequence because if you get the advanced question wrong you would do an intermediate question until

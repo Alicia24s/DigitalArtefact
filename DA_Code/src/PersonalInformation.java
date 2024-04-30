@@ -44,7 +44,7 @@ public void usersPersonalinfo(Scanner scanner){
        
        
            System.out.println("Your recorded details:");
-           System.out.println("firstname: " + get_firstname());
+           System.out.println("firstname: " + get_firstname());         
            System.out.println("surname: " + get_surname());
            System.out.println("Age:" + get_years());
            System.out.println("E-mail:" + get_email());
@@ -62,7 +62,7 @@ public void usersPersonalinfo(Scanner scanner){
      }
 
      public void set_years(int _years){
-          this._years = _years;
+      this._years = _years;
     }
 
     public void set_email(String _email){

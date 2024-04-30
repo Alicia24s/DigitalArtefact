@@ -10,52 +10,32 @@ import java.util.Scanner;
         
         //Move this into personal information.java and then call it through the recordmanagement.java class (Use getters and setters to privitise/Protect personalinfo)
         public void questionnaire(){
-        
-            boolean rightDetails;
-        
-
-            do{
-
-            System.out.println("FirstName:");
-                String firstname = scanner.nextLine();
-
-            System.out.println("Surname:");
-                 String surname = scanner.nextLine();
-
-            System.out.println("Age:");
-                 int years = scanner.nextInt();
- 
-            scanner.nextLine();
-            
-            System.out.println("E-mail");
-                 String email = scanner.nextLine();
-
-
-            //Find out how to get this into Personal information
-            System.out.println("firstname:" + firstname);
-            System.out.println("surname:" + surname);
-            System.out.println("Age:" + years);
-            System.out.println("Email:" + email);
-
-            System.out.println("Is this your details?");
-               
-            String userContinuation = scanner.nextLine();  
-
-
-            rightDetails = userContinuation.equalsIgnoreCase("yes");
-
-        }    while(!rightDetails);
-             
-            
 
         //Lab 3 & Lab 4
         boolean finished;
+        
+        do{
+           
+            boolean rightDetails;
+        
+            do{
+
+                usersRecords.usersPersonalinfo(scanner);
+
+                System.out.println("Are these the correct details?");
+                  String userContinuation = scanner.nextLine();  
+
+                rightDetails = userContinuation.equalsIgnoreCase("yes");
+
+                }while(!rightDetails);
+             
+      
 
     //Called from another class to do my Option selection
         PathwayManager options = new PathwayManager();
 
 
-      do{
+     
 
             System.out.println("Please select (1-4)");
             System.out.println("Option 1: Basic Finance Concepts");
@@ -94,19 +74,17 @@ import java.util.Scanner;
                     }
 
                     System.out.println("Thanks so much for taking the quiz");
-                    System.out.println("null");
-                    System.out.println("Do you want to take another(yes/no)");
+                    System.out.println("");
+                    System.out.println("Do you want to take another assessment(yes/no)");
 
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");
 
 
-            }while(!finished);
+        }while(!finished);
 
-
- 
-        System.out.println("THANK YOU FOR TAKING THE QUIZ <3");
+       System.out.println("THANK YOU FOR TAKING THE QUIZ <3");
         
         scanner.close();
 

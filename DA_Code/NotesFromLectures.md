@@ -25,3 +25,16 @@ The following are:
 - Options Pathways should extend testLogic class so that you can use that same scanner in the parameters :)
 
 - Note - When you're done write out all your classes with all the methods they have and see if you can create one method that can be called --> See picture taken from this lecture in your camera roll
+
+
+## report 
+
+- Reference to make it clear where its from --> not that serious just make it obvious using numbers
+-
+
+## Criteria
+
+- Descrive and discuss operation of code 30
+- Critical analysis of code featrure 30
+- Express ideas effectively and communicate information appropriately using range if media 20
+- Find evaluate and synthesise and use information accurately 20

@@ -167,6 +167,7 @@ public class Option1{
 
     }
 
+
     public void intermediate(){
 
         int randNumber = randomGenerator.nextInt(8);

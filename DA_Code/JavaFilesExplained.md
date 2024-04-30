@@ -20,11 +20,7 @@
 - Components of logic to be called within DA_Logic, Option Selection, App.Java (Basically anywhere in the code that has a loophole that the user can break, methods from this class fixes them)
 - This is a Class that holds methods for users rejections/ unexpected answers 
 - (Basically a class mitigating situations for the user to break the logic)
-- Challenge: Create a way to take word input and specialise and output with some AI API
-
-## AnswerManager.java
-
-- Determines what happens when user picks an answer A-B and tells them if its right or wrong  
+- Challenge: Create a way to take word input and specialise and output with some AI API 
 
 ## PersonalInformation.java
 
@@ -36,7 +32,7 @@
 - Holds records of users Answers to all qs
 - Why? To pull at the end of the quiz to show how they did
 
-## Beg___.java, Int___.java, Adv___.java
+## Option1-4.java
 
 - Holds questions for the different levels of question difficulty in each option selection
 - There are four options therefore there will be 12 of these classes in total
