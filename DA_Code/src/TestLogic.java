@@ -2,14 +2,14 @@ import java.util.Scanner;
 
     //Lab 1 & 2
     public class TestLogic{
+ 
+        //Move this into personal information.java and then call it through the recordmanagement.java class (Use getters and setters to privitise/Protect personalinfo)
+        public void questionnaire(){
 
         //Object that stores users question and answer data
         PersonalInformation usersRecords = new PersonalInformation();
         
         Scanner scanner = new Scanner(System.in);
-        
-        //Move this into personal information.java and then call it through the recordmanagement.java class (Use getters and setters to privitise/Protect personalinfo)
-        public void questionnaire(){
 
         //Lab 3 & Lab 4
         boolean finished;

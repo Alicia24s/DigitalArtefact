@@ -1,9 +1,10 @@
 
 import java.util.Scanner;
-import Options.Option1;
-import Options.Option2;
-import Options.Option3;
-import Options.Option4;
+
+import Questions.Option1;
+import Questions.Option2;
+import Questions.Option3;
+import Questions.Option4;
 
 /* Stuff to do
  *
@@ -36,11 +37,11 @@ public class OptionManager {
    Scanner scanner = new Scanner(System.in);
 
    //Counter to make sure the quiz only run for 7 questions
-   int counter = 0;
+  
    //Sequence for option 1 pathway questions
     public void option1(){
       
-                
+        int counter = 0;       
         int number = 1;
 
         do{
@@ -49,7 +50,9 @@ public class OptionManager {
                    case 1: //beginner
                  
                     option1.beginner();
-                        String usersAnswer = scanner.nextLine();
+                    String answer = scanner.nextLine();
+                    String usersAnswer = answer.toLowerCase();
+
 
                                 if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
@@ -58,9 +61,10 @@ public class OptionManager {
                                     
                                     } else{
 
-                                            rightOrWrongLogic.wrongAnswer(true, false, false);
+                                           
                                             number = 1;
                                         }
+                     
                
                 counter++;
                 break;
@@ -68,7 +72,8 @@ public class OptionManager {
                    case 2: //intermediate
                    
                       option1.intermediate();  
-                            String usersAnswer2 = scanner.nextLine();
+                      String answer2 = scanner.nextLine();
+                      String usersAnswer2 = answer2.toLowerCase();
 
                                 if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                             
@@ -76,19 +81,21 @@ public class OptionManager {
                                     number = 3;
                                     
                                     } else{
-                                    
-                                        rightOrWrongLogic.wrongAnswer(false, true, false);
                                         number = 1;
                                         }
+
+
                
                 counter++;
 
                 break;
-
+                
+            
                    case 3:
 
                    option1.advanced();
-                        String usersAnswer3 = scanner.nextLine();
+                   String answer3 = scanner.nextLine();
+                   String usersAnswer3 = answer3.toLowerCase();
                         
                             if(usersAnswer3.equals(option1.getCorrectAnswer())) {   
                                 
@@ -97,16 +104,15 @@ public class OptionManager {
                                 
                                 }else{
                                 
-                                    rightOrWrongLogic.wrongAnswer(false, false, true);
                                     number = 2;
                                 }
                
                 counter++;
                break;
 
-          
-           
             }
+
+            scanner.nextLine();
 
         }while(counter <8);
     }
@@ -116,6 +122,7 @@ public class OptionManager {
 public void option2(){
   //same code as the one in option1() but tailor to option 2
                
+  int counter = 0;       
   int number = 1;
 
   do{
@@ -123,8 +130,10 @@ public void option2(){
       switch (number){
              case 1: //beginner
            
-              option2.beginner();
-                  String usersAnswer = scanner.nextLine();
+    
+              String answer = scanner.nextLine();
+              String usersAnswer = answer.toLowerCase();
+
 
                           if(usersAnswer.equals(option2.getCorrectAnswer())) {   
                       
@@ -133,7 +142,7 @@ public void option2(){
                               
                               } else{
 
-                                      rightOrWrongLogic.wrongAnswer(true, false, false);
+                                     
                                       number = 1;
                                   }
          
@@ -143,7 +152,8 @@ public void option2(){
              case 2: //intermediate
              
                 option2.intermediate();  
-                      String usersAnswer2 = scanner.nextLine();
+                String answer2 = scanner.nextLine();
+                String usersAnswer2 = answer2.toLowerCase();
 
                           if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                       
@@ -151,10 +161,10 @@ public void option2(){
                               number = 3;
                               
                               } else{
-                              
-                                  rightOrWrongLogic.wrongAnswer(false, true, false);
+                
                                   number = 1;
                                   }
+                
          
           counter++;
 
@@ -163,7 +173,8 @@ public void option2(){
              case 3:
 
              option2.advanced();
-                  String usersAnswer3 = scanner.nextLine();
+             String answer3 = scanner.nextLine();
+             String usersAnswer3 = answer3.toLowerCase();
                   
                       if(usersAnswer3.equals(option2.getCorrectAnswer())) {   
                           
@@ -171,8 +182,7 @@ public void option2(){
                           number = 3;
                           
                           }else{
-                          
-                              rightOrWrongLogic.wrongAnswer(false, false, true);
+                    
                               number = 2;
                           }
          
@@ -182,13 +192,15 @@ public void option2(){
     
      
       }
-
+      
+    scanner.nextLine();
   }while(counter <8);
 }
 
 public void option3(){
     //same code as the one in option1() but tailor to option 
                  
+    int counter = 0;       
     int number = 1;
 
     do{
@@ -197,7 +209,8 @@ public void option3(){
                case 1: //beginner
              
                 option3.beginner();
-                    String usersAnswer = scanner.nextLine();
+                    String answer = scanner.nextLine();
+                    String usersAnswer = answer.toLowerCase();
 
                             if(usersAnswer.equals(option3.getCorrectAnswer())) {   
                         
@@ -206,17 +219,18 @@ public void option3(){
                                 
                                 } else{
 
-                                        rightOrWrongLogic.wrongAnswer(true, false, false);
+                                       
                                         number = 1;
                                     }
-           
+       
             counter++;
             break;
 
                case 2: //intermediate
                
                   option3.intermediate();  
-                        String usersAnswer2 = scanner.nextLine();
+                    String answer2 = scanner.nextLine();
+                    String usersAnswer2 = answer2.toLowerCase();
 
                             if(usersAnswer2.equals(option3.getCorrectAnswer())) {   
                         
@@ -225,7 +239,7 @@ public void option3(){
                                 
                                 } else{
                                 
-                                    rightOrWrongLogic.wrongAnswer(false, true, false);
+   
                                     number = 1;
                                     }
            
@@ -236,7 +250,8 @@ public void option3(){
                case 3:
 
                option3.advanced();
-                    String usersAnswer3 = scanner.nextLine();
+               String answer3 = scanner.nextLine();
+               String usersAnswer3 = answer3.toLowerCase();
                     
                         if(usersAnswer3.equals(option3.getCorrectAnswer())) {   
                             
@@ -244,8 +259,7 @@ public void option3(){
                             number = 3;
                             
                             }else{
-                            
-                                rightOrWrongLogic.wrongAnswer(false, false, true);
+                        
                                 number = 2;
                             }
            
@@ -256,6 +270,8 @@ public void option3(){
        
         }
 
+        scanner.nextLine();
+
     }while(counter <8);
 
 
@@ -264,6 +280,7 @@ public void option3(){
 public void option4(){
     //same code as the one in option1() but tailor to option 4
                  
+    int counter = 0;       
     int number = 1;
 
     do{
@@ -272,7 +289,10 @@ public void option4(){
                case 1: //beginner
              
                 option4.beginner();
-                    String usersAnswer = scanner.nextLine();
+
+                String answer = scanner.nextLine();
+                String usersAnswer = answer.toLowerCase();
+
 
                             if(usersAnswer.equals(option4.getCorrectAnswer())) {   
                         
@@ -281,7 +301,7 @@ public void option4(){
                                 
                                 } else{
 
-                                        rightOrWrongLogic.wrongAnswer(true, false, false);
+                                       
                                         number = 1;
                                     }
            
@@ -291,7 +311,8 @@ public void option4(){
                case 2: //intermediate
                
                   option4.intermediate();  
-                        String usersAnswer2 = scanner.nextLine();
+                  String answer2 = scanner.nextLine();
+                  String usersAnswer2 = answer2.toLowerCase();
 
                             if(usersAnswer2.equals(option4.getCorrectAnswer())) {   
                         
@@ -300,7 +321,7 @@ public void option4(){
                                 
                                 } else{
                                 
-                                    rightOrWrongLogic.wrongAnswer(false, true, false);
+   
                                     number = 1;
                                     }
            
@@ -311,7 +332,8 @@ public void option4(){
                case 3:
 
                option4.advanced();
-                    String usersAnswer3 = scanner.nextLine();
+               String answer3 = scanner.nextLine();
+               String usersAnswer3 = answer3.toLowerCase();
                     
                         if(usersAnswer3.equals(option4.getCorrectAnswer())) {   
                             
@@ -319,8 +341,7 @@ public void option4(){
                             number = 3;
                             
                             }else{
-                            
-                                rightOrWrongLogic.wrongAnswer(false, false, true);
+                        
                                 number = 2;
                             }
            
@@ -330,6 +351,8 @@ public void option4(){
       
        
         }
+     
+        scanner.nextLine();
 
     }while(counter <8);
 

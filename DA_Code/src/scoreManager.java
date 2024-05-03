@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class scoreManager {
     
@@ -12,35 +11,30 @@ public class scoreManager {
      * 
      */
     private int _score;
-    ArrayList<Integer> scoreRecord = new ArrayList<Integer>();
+
 
 
     public void set_score(int _score){
         this._score = _score;
-        manageScores(); 
-    } 
     
-    public void manageScores(){
-
-    scoreRecord.add(get_score());
-
-    }
+    } 
     
     public int get_score(){
         return _score;
     }
 
     public void printScoreRecord(){
+        
+        if (get_score()> 10){
 
-         System.out.println("Question 1:" + scoreRecord.get(0));
-         System.out.println("Question 2:" + scoreRecord.get(1));
-         System.out.println("Question 3:" + scoreRecord.get(2));
-         System.out.println("Question 4:" + scoreRecord.get(3));
-         System.out.println("Question 5:" + scoreRecord.get(4));
-         System.out.println("Question 6:" + scoreRecord.get(5));
-         System.out.println("Question 7:" + scoreRecord.get(6));
-
-         
+            //expert
+            System.out.println("your score was "+ get_score());
+            System.out.println("you did great");
+        }
+        else{
+            System.out.println("Your score was "+get_score()+ " keep trying");
+        }
     }
+    
 
 }
