@@ -4,7 +4,7 @@ public class App{
 
         //Method that takes the questionnaire forward
                 
-        TestLogic digitalArtifact = new TestLogic();
+        DigitalArtifact digitalArtifact = new DigitalArtifact();
             digitalArtifact.questionnaire();
                  
     }
