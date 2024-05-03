@@ -1,6 +1,10 @@
-# DigitalArtefact
-Practicing version control for my digital artefact thing so I can have it all in one place  and also practice using git on the daily
+# DigitalArtefact - for lecturers
+If you want to see the process its on github
+URL: https://github.com/Alicia24s/DigitalArtefact
 
+Brief Documentation highlights purpose of each file
+
+Happy playing!
 
 # Notes you may need
 
