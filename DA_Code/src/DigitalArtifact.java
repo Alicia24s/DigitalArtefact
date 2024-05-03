@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
     //Lab 1 & 2
-    public class TestLogic{
+    public class DigitalArtifact{
  
         //Move this into personal information.java and then call it through the recordmanagement.java class (Use getters and setters to privitise/Protect personalinfo)
         public void questionnaire(){
