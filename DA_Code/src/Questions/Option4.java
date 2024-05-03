@@ -1,4 +1,4 @@
-package Options;
+package Questions;
 import java.util.Random;
 
 public class Option4{
