@@ -1,19 +1,17 @@
 
-## Need to do: 
-
-
-
-## Need to do (part 2):
+## TO DO 3/5-4/5:
 
 - Change all option 3 and 4 questions to the right ones for that category (rn theyre just copies of questions)
 
 - Correct code in other options using option 1.java as a template
 
-- correct spellings
+- correct text in all questions
+
+- leave spaces between user input and computer output
 
 - code doesnt respond to yes or no anymore at the end of the quiz so you need to sort that out
 
- - you need more questions cause the score doesn't reflect 
+- you need more questions cause the score doesn't reflect 
 
 - Add extensive comments to explain stuff --> have an opening comment at the top
 
