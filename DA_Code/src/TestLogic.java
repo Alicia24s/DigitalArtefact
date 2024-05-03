@@ -45,7 +45,7 @@ import java.util.Scanner;
             
 
        int numberSelection = scanner.nextInt();
-            scanner.nextLine();
+    
 
                 switch(numberSelection){
 
@@ -73,13 +73,12 @@ import java.util.Scanner;
                         System.out.println(numberSelection + "is not a valid choice");
                     }
 
-                    System.out.println("Thanks so much for taking the quiz");
-                    System.out.println("");
-                    System.out.println("Do you want to take another assessment(yes/no)");
+                    System.out.println("Would you like to select another assessment(yes/no)");
 
                          String userContinuation = scanner.nextLine();  
 
                     finished = userContinuation.equalsIgnoreCase("no");
+                    
 
 
         }while(!finished);

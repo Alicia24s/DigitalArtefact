@@ -21,11 +21,12 @@ import Questions.Option4;
  * maybe you can put a switch statement with the do while loops which outputs a number and that number determines whether youre up or down
  * 1 = beginner 2= intermediate 3= advanced
  *
+ * you could simplify this all down into one method but theres no time so leave it alone
  */
 
-public class OptionManager {
+public class OptionManager extends scoreManager{
     
-   RightOrWrongLogic rightOrWrongLogic = new RightOrWrongLogic();
+   scoreManager scoreManager = new scoreManager();
 
    //Questions for each option
     Option1 option1 = new Option1();
@@ -56,7 +57,7 @@ public class OptionManager {
 
                                 if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
-                                    rightOrWrongLogic.rightAnswer(true, false, false);
+                                    scoreManager.rightAnswer(true, false, false);
                                     number = 2;
                                     
                                     } else{
@@ -77,8 +78,9 @@ public class OptionManager {
 
                                 if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                             
-                                    rightOrWrongLogic.rightAnswer(false, true, false);
+                                    scoreManager.rightAnswer(false, true, false);
                                     number = 3;
+                                
                                     
                                     } else{
                                         number = 1;
@@ -99,11 +101,12 @@ public class OptionManager {
                         
                             if(usersAnswer3.equals(option1.getCorrectAnswer())) {   
                                 
-                                rightOrWrongLogic.rightAnswer(false, false, true);
+                                scoreManager.rightAnswer(false, false, true);
                                 number = 3;
                                 
                                 }else{
-                                
+                                    
+                                    scoreManager.wrongAnswer();
                                     number = 2;
                                 }
                
@@ -112,9 +115,9 @@ public class OptionManager {
 
             }
 
-            scanner.nextLine();
-
         }while(counter <8);
+
+        scoreManager.printScoreRecord();
     }
 
 
@@ -137,12 +140,12 @@ public void option2(){
 
                           if(usersAnswer.equals(option2.getCorrectAnswer())) {   
                       
-                              rightOrWrongLogic.rightAnswer(true, false, false);
+                              scoreManager.rightAnswer(true, false, false);
                               number = 2;
                               
                               } else{
 
-                                     
+                                scoreManager.wrongAnswer();
                                       number = 1;
                                   }
          
@@ -157,11 +160,12 @@ public void option2(){
 
                           if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                       
-                              rightOrWrongLogic.rightAnswer(false, true, false);
+                              scoreManager.rightAnswer(false, true, false);
                               number = 3;
                               
                               } else{
-                
+                                 
+                                scoreManager.wrongAnswer();
                                   number = 1;
                                   }
                 
@@ -178,11 +182,12 @@ public void option2(){
                   
                       if(usersAnswer3.equals(option2.getCorrectAnswer())) {   
                           
-                          rightOrWrongLogic.rightAnswer(false, false, true);
+                          scoreManager.rightAnswer(false, false, true);
                           number = 3;
                           
                           }else{
-                    
+                             
+                            scoreManager.wrongAnswer();
                               number = 2;
                           }
          
@@ -193,7 +198,6 @@ public void option2(){
      
       }
       
-    scanner.nextLine();
   }while(counter <8);
 }
 
@@ -214,7 +218,7 @@ public void option3(){
 
                             if(usersAnswer.equals(option3.getCorrectAnswer())) {   
                         
-                                rightOrWrongLogic.rightAnswer(true, false, false);
+                                scoreManager.rightAnswer(true, false, false);
                                 number = 2;
                                 
                                 } else{
@@ -234,7 +238,7 @@ public void option3(){
 
                             if(usersAnswer2.equals(option3.getCorrectAnswer())) {   
                         
-                                rightOrWrongLogic.rightAnswer(false, true, false);
+                                scoreManager.rightAnswer(false, true, false);
                                 number = 3;
                                 
                                 } else{
@@ -255,7 +259,7 @@ public void option3(){
                     
                         if(usersAnswer3.equals(option3.getCorrectAnswer())) {   
                             
-                            rightOrWrongLogic.rightAnswer(false, false, true);
+                            scoreManager.rightAnswer(false, false, true);
                             number = 3;
                             
                             }else{
@@ -296,7 +300,7 @@ public void option4(){
 
                             if(usersAnswer.equals(option4.getCorrectAnswer())) {   
                         
-                                rightOrWrongLogic.rightAnswer(true, false, false);
+                                scoreManager.rightAnswer(true, false, false);
                                 number = 2;
                                 
                                 } else{
@@ -316,7 +320,7 @@ public void option4(){
 
                             if(usersAnswer2.equals(option4.getCorrectAnswer())) {   
                         
-                                rightOrWrongLogic.rightAnswer(false, true, false);
+                                scoreManager.rightAnswer(false, true, false);
                                 number = 3;
                                 
                                 } else{
@@ -337,7 +341,7 @@ public void option4(){
                     
                         if(usersAnswer3.equals(option4.getCorrectAnswer())) {   
                             
-                            rightOrWrongLogic.rightAnswer(false, false, true);
+                            scoreManager.rightAnswer(false, false, true);
                             number = 3;
                             
                             }else{

@@ -1,40 +1,59 @@
 
 public class scoreManager {
-    
-    /*
-     * Class to record the scores with getters and setters
-     * 
-     * The Hash map will store the info --> The integer parameter will be abstracted into the score calculator method
-     * which will calculate the score and then youll get to the front ykykykykyk
-     * 
-     * Deleted the Score calculator class cause its unneccesary --> Just gonna add them together as you dont have the time to do anything too mad
-     * 
-     */
-    private int _score;
 
+    private int score;
 
-
-    public void set_score(int _score){
-        this._score = _score;
+    public void set_score(int score){
+        this.score = score;
     
     } 
     
     public int get_score(){
-        return _score;
+        return score;
     }
 
     public void printScoreRecord(){
         
-        if (get_score()> 10){
+        System.out.println("your final score was" + get_score());
 
-            //expert
-            System.out.println("your score was "+ get_score());
+        if(get_score()>= 20){
             System.out.println("you did great");
         }
+        else if(19 >= get_score() && get_score()>= 15){
+            System.out.println("you did average");
+        }
         else{
-            System.out.println("Your score was "+get_score()+ " keep trying");
+            System.out.println("There is room to grow");
         }
     }
     
+    public void rightAnswer(boolean beginner, boolean intermediate, boolean advanced){
+
+        if (beginner){     
+              //add 1 point to scoreManager using getters and setters
+
+            set_score(get_score()+1);
+            System.out.println("Score is" + get_score());
+              
+           } 
+              else if(intermediate){
+                //add 2 points to score manager using getters and setters
+                
+              set_score(get_score()+2);
+              System.out.println("Score is" + get_score());
+
+              }
+                  else if(advanced){  
+                  //add 3 points to score manager using getters and setters 
+
+                    set_score(get_score()+3);
+                    System.out.println("Score is" + get_score());
+                    
+                    } 
+    }
+
+    public String wrongAnswer(){
+        return "wrong - zero points";
+    }
 
 }
