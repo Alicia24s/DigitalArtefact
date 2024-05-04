@@ -29,20 +29,26 @@ import java.util.Scanner;
 
                     }while(!rightDetails);
              
-        //Called from another class to do my Option selection
-        PathwayManager options = new PathwayManager();
+        // use of array 50-59
+        String optionNames[] = {
+            " 1 Basic Finance Concepts",
+            " 2 Investment and Portfolio Management",
+            " 3 Financial Analysis and Valuation",
+            " 4 Corporate finance"
+        };
 
-            System.out.println("\nPlease select (1-4)");
-            System.out.println("\nOption 1: Basic Finance Concepts");
-            System.out.println("Option 2: Investment and Portfolio Management");
-            System.out.println("Option 3: Financial Analysis and Valuation");
-            System.out.println("Option 4: Corporate finance");
+           
+        System.out.println("\nPlease select (1-4)");
+        for (int i = 0; i < optionNames.length; i++) {
+            System.out.println("Option" + optionNames[i]);
+        }
             
-
+        PathwayManager options = new PathwayManager();
             int numberSelection = scanner.nextInt();
+            
     
                 switch(numberSelection){
-
+                 
                     case 1:
 
                         options.option1(numberSelection);

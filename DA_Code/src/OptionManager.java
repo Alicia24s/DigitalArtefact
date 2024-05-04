@@ -23,10 +23,8 @@ import Questions.Option4;
  *
  * you could simplify this all down into one method but theres no time so leave it alone
  */
-
 public class OptionManager extends scoreManager{
     
-
    //Questions for each option
     Option1 option1 = new Option1();
     Option2 option2 = new Option2();
@@ -60,7 +58,7 @@ public class OptionManager extends scoreManager{
                                     
                                 } else{
                                       
-                                   wrongAnswer(); 
+                                    wrongAnswer(); 
                                             number = 1;
                                         }
                      
