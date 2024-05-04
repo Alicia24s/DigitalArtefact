@@ -52,8 +52,8 @@ public class scoreManager {
                     } 
     }
 
-    public String wrongAnswer(){
-        return "wrong better luck next time";
+    public void wrongAnswer(){
+        System.out.println("wrong better luck next time");
     }
 
 }

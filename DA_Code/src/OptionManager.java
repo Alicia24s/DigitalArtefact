@@ -26,7 +26,6 @@ import Questions.Option4;
 
 public class OptionManager extends scoreManager{
     
-   scoreManager scoreManager = new scoreManager();
 
    //Questions for each option
     Option1 option1 = new Option1();
@@ -56,12 +55,12 @@ public class OptionManager extends scoreManager{
 
                         if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
-                                scoreManager.rightAnswer(true, false, false);
+                               rightAnswer(true, false, false);
                                     number = 2;
                                     
                                 } else{
                                       
-                                    scoreManager.wrongAnswer(); 
+                                   wrongAnswer(); 
                                             number = 1;
                                         }
                      
@@ -76,13 +75,12 @@ public class OptionManager extends scoreManager{
                       String usersAnswer2 = answer2.toLowerCase();
 
                                 if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
-                            
-                                    scoreManager.rightAnswer(false, true, false);
+                                   rightAnswer(false, true, false);
                                     number = 3;
                                 
                                     } else{
 
-                                        scoreManager.wrongAnswer(); 
+                                       wrongAnswer(); 
                                           number = 1;
                                         }
         
@@ -98,12 +96,12 @@ public class OptionManager extends scoreManager{
                         
                             if(usersAnswer3.equals(option1.getCorrectAnswer())) {   
                                 
-                                scoreManager.rightAnswer(false, false, true);
+                               rightAnswer(false, false, true);
                                 number = 3;
                                 
                                 }else{
                                     
-                                    scoreManager.wrongAnswer();
+                                   wrongAnswer();
                                     number = 2;
                                 }
                
@@ -114,7 +112,7 @@ public class OptionManager extends scoreManager{
 
         }while(counter <8);
 
-        scoreManager.printScoreRecord();
+       printScoreRecord();
     }
 
 
@@ -137,12 +135,12 @@ public void option2(){
 
                           if(usersAnswer.equals(option2.getCorrectAnswer())) {   
                       
-                              scoreManager.rightAnswer(true, false, false);
+                             rightAnswer(true, false, false);
                               number = 2;
                               
                               } else{
 
-                                scoreManager.wrongAnswer();
+                               wrongAnswer();
                                       number = 1;
                                   }
          
@@ -157,12 +155,12 @@ public void option2(){
 
                           if(usersAnswer2.equals(option1.getCorrectAnswer())) {   
                       
-                              scoreManager.rightAnswer(false, true, false);
+                             rightAnswer(false, true, false);
                               number = 3;
                               
                               } else{
                                  
-                                scoreManager.wrongAnswer();
+                               wrongAnswer();
                                   number = 1;
                                   }
                 
@@ -179,12 +177,12 @@ public void option2(){
                   
                       if(usersAnswer3.equals(option2.getCorrectAnswer())) {   
                           
-                          scoreManager.rightAnswer(false, false, true);
+                         rightAnswer(false, false, true);
                           number = 3;
                           
                           }else{
                              
-                            scoreManager.wrongAnswer();
+                           wrongAnswer();
                               number = 2;
                           }
          
@@ -197,7 +195,7 @@ public void option2(){
       
   }while(counter <8);
 
-  scoreManager.printScoreRecord();
+ printScoreRecord();
 }
 
 public void option3(){
@@ -217,12 +215,12 @@ public void option3(){
 
                             if(usersAnswer.equals(option3.getCorrectAnswer())) {   
                         
-                                scoreManager.rightAnswer(true, false, false);
+                               rightAnswer(true, false, false);
                                 number = 2;
                                 
                                 } else{
                                         number = 1;
-                                        scoreManager.wrongAnswer();
+                                       wrongAnswer();
                                     }
        
             counter++;
@@ -236,13 +234,13 @@ public void option3(){
 
                             if(usersAnswer2.equals(option3.getCorrectAnswer())) {   
                         
-                                scoreManager.rightAnswer(false, true, false);
+                               rightAnswer(false, true, false);
                                 number = 3;
                                 
                                 } else{
 
                                     number = 1;
-                                    scoreManager.wrongAnswer();
+                                   wrongAnswer();
                                     }
            
             counter++;
@@ -257,12 +255,12 @@ public void option3(){
                     
                         if(usersAnswer3.equals(option3.getCorrectAnswer())) {   
                             
-                            scoreManager.rightAnswer(false, false, true);
+                           rightAnswer(false, false, true);
                             number = 3;
                             
                             }else{
                                  
-                                scoreManager.wrongAnswer();
+                               wrongAnswer();
                                 number = 2;
                             }
            
@@ -277,7 +275,7 @@ public void option3(){
 
     }while(counter <8);
 
-    scoreManager.printScoreRecord();
+   printScoreRecord();
 }
 
 public void option4(){
@@ -299,12 +297,12 @@ public void option4(){
 
                             if(usersAnswer.equals(option4.getCorrectAnswer())) {   
                         
-                                scoreManager.rightAnswer(true, false, false);
+                               rightAnswer(true, false, false);
                                 number = 2;
                                 
                                 } else{
 
-                                    scoreManager.wrongAnswer();
+                                   wrongAnswer();
                                         number = 1;
                                     }
            
@@ -319,12 +317,12 @@ public void option4(){
 
                             if(usersAnswer2.equals(option4.getCorrectAnswer())) {   
                         
-                                scoreManager.rightAnswer(false, true, false);
+                               rightAnswer(false, true, false);
                                 number = 3;
                                 
                                 } else{
                                 
-                                    scoreManager.wrongAnswer();
+                                   wrongAnswer();
                                     number = 1;
                                     }
            
@@ -340,7 +338,7 @@ public void option4(){
                     
                         if(usersAnswer3.equals(option4.getCorrectAnswer())) {   
                             
-                            scoreManager.rightAnswer(false, false, true);
+                           rightAnswer(false, false, true);
                             number = 3;
                             
                             }else{
@@ -359,7 +357,7 @@ public void option4(){
 
     }while(counter <8);
 
-    scoreManager.printScoreRecord();
+   printScoreRecord();
 }
 
 
