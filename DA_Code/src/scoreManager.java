@@ -33,27 +33,27 @@ public class scoreManager {
               //add 1 point to scoreManager using getters and setters
 
             set_score(get_score()+1);
-            System.out.println("Correct you have scored 1 point");
+            System.out.println("Correct you have scored 1 point\n");
               
            } 
               else if(intermediate){
                 //add 2 points to score manager using getters and setters
                 
               set_score(get_score()+2);
-              System.out.println("Correct you have scored 2 points");
+              System.out.println("Correct you have scored 2 points\n");
 
               }
                   else if(advanced){  
                   //add 3 points to score manager using getters and setters 
 
                     set_score(get_score()+3);
-                    System.out.println("Correct you have scored 3 points");
+                    System.out.println("Correct you have scored 3 points\n");
                     
                     } 
     }
 
     public void wrongAnswer(){
-        System.out.println("wrong better luck next time");
+        System.out.println("wrong better luck next time\n");
     }
 
 }

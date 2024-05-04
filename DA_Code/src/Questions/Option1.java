@@ -5,8 +5,9 @@ public class Option1{
     /*
      * Questions for option 1 - basic financial concepts
      * 
+     * The methods split the Option 1 questions int
+     * 
      */
-    // mAKe a random number from 1 to 7 andd then put it into the switch statement 
 
     private Random randomGenerator = new Random();
 
@@ -76,10 +77,6 @@ public class Option1{
             "\r\n" + //
             "D) Annual Principal _result = \r\n" + //
             "\r\n");
-    
-            //Get function for A
-
-
 
             setCorrectAnswer("a");
 

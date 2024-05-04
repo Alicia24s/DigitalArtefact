@@ -44,22 +44,15 @@ import java.util.Scanner;
         }
             
         PathwayManager options = new PathwayManager();
-            int numberSelection = scanner.nextInt();
-            boolean validNumberSelection = false;
-               
-                while (!validNumberSelection) {
-                  try {
-                      if (numberSelection < 0) {
-                          System.out.println("Error - Negative selection - Please select a number from 1-4:");
-                      } else {
-                          validNumberSelection = true;
-                      }
-                  } catch (NumberFormatException e) {
-                      System.out.println("Please enter a valid integer for age:");
-                  }
-              }
-            
     
+        int numberSelection = scanner.nextInt();
+
+           while(numberSelection > 4 && numberSelection < 1){
+
+            System.out.println("PLEASE select between 1 AND 4");
+            numberSelection = scanner.nextInt();
+           }
+
                 switch(numberSelection){
                  
                     case 1:
@@ -83,11 +76,10 @@ import java.util.Scanner;
                         break;
 
                     default:
-                        System.out.println(numberSelection + "is not a valid choice");
+                        System.out.println(numberSelection + " is not a valid choice");
                     }
                     
-                    
-                    System.out.println("Would you like to select another assessment(yes/no)");
+                    System.out.println("Would you like to restart the assessment? (yes/no)");
                      
                     scanner.nextLine();
                     String userContinuation = scanner.nextLine();

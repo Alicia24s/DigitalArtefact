@@ -50,6 +50,7 @@ public class OptionManager extends scoreManager{
                     option1.beginner();
                     String answer = scanner.nextLine();
                     String usersAnswer = answer.toLowerCase();
+                     
 
                         if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
@@ -288,7 +289,6 @@ public void option4(){
                case 1: //beginner
              
                 option4.beginner();
-
                 String answer = scanner.nextLine();
                 String usersAnswer = answer.toLowerCase();
 
@@ -340,15 +340,14 @@ public void option4(){
                             number = 3;
                             
                             }else{
-                        
+                               
+                              wrongAnswer();
                                 number = 2;
                             }
            
             counter++;
            break;
 
-      
-       
         }
      
         scanner.nextLine();
