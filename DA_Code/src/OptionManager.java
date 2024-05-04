@@ -358,9 +358,10 @@ public void option4(){
         scanner.nextLine();
 
     }while(counter <8);
-    
+
     scoreManager.printScoreRecord();
 }
+
 
 
 }

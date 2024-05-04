@@ -10,7 +10,8 @@ public class PersonalInformation {
       /*
       * Holds users personal info
       *
-      * Gives the user a chance to refactor their personal information in DigitalArtifact.Java by returning encrypted personal info)
+      * Gives the user a chance to refactor their personal information in DigitalArtifact
+      .Java by returning encrypted personal info)
       * 
       */
       private String _firstname;
