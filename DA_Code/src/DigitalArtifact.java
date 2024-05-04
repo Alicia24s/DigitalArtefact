@@ -45,6 +45,19 @@ import java.util.Scanner;
             
         PathwayManager options = new PathwayManager();
             int numberSelection = scanner.nextInt();
+            boolean validNumberSelection = false;
+               
+                while (!validNumberSelection) {
+                  try {
+                      if (numberSelection < 0) {
+                          System.out.println("Error - Negative selection - Please select a number from 1-4:");
+                      } else {
+                          validNumberSelection = true;
+                      }
+                  } catch (NumberFormatException e) {
+                      System.out.println("Please enter a valid integer for age:");
+                  }
+              }
             
     
                 switch(numberSelection){

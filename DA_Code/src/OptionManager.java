@@ -98,8 +98,8 @@ public class OptionManager extends scoreManager{
                                 number = 3;
                                 
                                 }else{
-                                    
-                                   wrongAnswer();
+                                     
+                                  wrongAnswer();
                                     number = 2;
                                 }
                

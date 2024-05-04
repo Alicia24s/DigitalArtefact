@@ -28,7 +28,7 @@ public class Option4{
         
         //Switch statement switches through questions returning _result 
    
-        int randNumber = randomGenerator.nextInt(7);
+        int randNumber = randomGenerator.nextInt(7) + 1;
       
           switch (randNumber) {
             case 1:

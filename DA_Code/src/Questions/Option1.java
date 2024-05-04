@@ -21,7 +21,7 @@ public class Option1{
         
         //Switch statement switches through questions returning _result 
    
-        int randNumber = randomGenerator.nextInt(7);
+        int randNumber = randomGenerator.nextInt(7)+ 1;
       
           switch (randNumber) {
             case 1:
@@ -161,14 +161,28 @@ public class Option1{
         "D)Rent Payment\r\n" + //
         "\r\n"
         );
-        
-        //Answers for B
-        
-
-            
+                
         setCorrectAnswer("b");
 
             break;
+
+        case 8:
+
+                    System.out.println("What is compound interest?\r\n" + //
+                                        "\r\n" + //
+                                        "A) Interest calculated only on the principal amount \r\n" + //
+                                        "\r\n" + //
+                                        "B) Interest calculated on the initial principal and also on the accumulated interest from previous periods\r\n" + //
+                                        "\r\n" + //
+                                        "C) Interest calculated at a fixed rate annually \r\n" + //
+                                        "\r\n" + //
+                                        "D) Interest calculated only on the accumulated interest\r\n" + //
+                                        "\r\n");
+
+        //Answer is B
+        setCorrectAnswer("b");
+        
+        break;
           }
 
     }
@@ -450,6 +464,26 @@ public class Option1{
            
             setCorrectAnswer("c");
            break;     
+
+           case 8:
+            
+           
+           System.out.println("\n\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
+                                "\r\n" + //
+                                "A) All available information is reflected in the current stock price \r\n" + //
+                                "\r\n" + //
+                                "B) Future stock price movements are unpredictable \r\n" + //
+                                "\r\n" + //
+                                "C) Investors can consistently earn above-average _result =s \r\n" + //
+                                "\r\n" + //
+                                "D) Stock prices follow a random pattern\r\n" + //
+                                "" );
+
+           //Answer: C) Investors can consistently earn above-average _result =s
+          
+           setCorrectAnswer("c");
+           break;     
+
         }
     }
 

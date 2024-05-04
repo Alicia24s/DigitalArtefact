@@ -26,7 +26,9 @@ public class Option3 {
         
         //Switch statement switches through questions returning _result 
    
-        int randNumber = randomGenerator.nextInt(7);
+        int randNumber = randomGenerator.nextInt(7) + 1;
+
+        
       
           switch (randNumber) {
             case 1:
@@ -149,24 +151,37 @@ public class Option3 {
 
             case 7:
 
-           
-        System.out.println("Which of the following is an example of an asset?\r\n" + //
-        "\r\n" + //
-        " A)Loan \r\n" + //
-        "\r\n" + //
-        "B)House\r\n" + //
-        "\r\n" + //
-        " C)Credit card debt \r\n" + //
-        "\r\n" + //
-        "D)Rent Payment\r\n" + //
-        "\r\n"
-        );
-        
-        //Answers for B
-        
+                
+                System.out.println("Which of the following is an example of an asset?\r\n" + //
+                                    "\r\n" + //
+                                    " A)Loan \r\n" + //
+                                    "\r\n" + //
+                                    "B)House\r\n" + //
+                                    "\r\n" + //
+                                    " C)Credit card debt \r\n" + //
+                                    "\r\n" + //
+                                    "D)Rent Payment\r\n" + //
+                                    "\r\n"
+                                    );
+                
+                setCorrectAnswer("b");
 
+            case 8:
+
+                
+            System.out.println("Which of the following is an example of an asset?\r\n" + //
+                                "\r\n" + //
+                                " A)Loan \r\n" + //
+                                "\r\n" + //
+                                "B)House\r\n" + //
+                                "\r\n" + //
+                                " C)Credit card debt \r\n" + //
+                                "\r\n" + //
+                                "D)Rent Payment\r\n" + //
+                                "\r\n"
+                                );
             
-        setCorrectAnswer("b");
+                    setCorrectAnswer("b");
 
             break;
           }
@@ -176,21 +191,21 @@ public class Option3 {
 
     public void intermediate(){
 
-        int randNumber = randomGenerator.nextInt(8);
+        int randNumber = randomGenerator.nextInt(7);
 
         switch (randNumber) {
             case 1:
 
             //Question 1
             System.out.println("\tWhich of the following investments has the highest liquidity? \r\n" + //
-            "\r\n" + //
-            "A) Real estate\r\n" + //
-            "\r\n" + //
-            "B) Stocks \r\n" + //
-            "\r\n" + //
-            "C) Bonds\r\n" + //
-            "\r\n" + //
-            "D) Certificate of Deposit (CD)\r\n");
+                                "\r\n" + //
+                                "A) Real estate\r\n" + //
+                                "\r\n" + //
+                                "B) Stocks \r\n" + //
+                                "\r\n" + //
+                                "C) Bonds\r\n" + //
+                                "\r\n" + //
+                                "D) Certificate of Deposit (CD)\r\n");
 
             //"Answer: B) Stocks
            
@@ -200,16 +215,16 @@ public class Option3 {
                 break;
             case 2:
 
-            System.out.println(" 1.\tWhat is the difference between stocks and bonds?\r\n" + //
-            "\r\n" + //
-            "A) Stocks represent ownership in a company, while bonds represent debt\r\n" + //
-            "\r\n" + //
-            "B) Stocks pay fixed interest, while bonds pay dividends \r\n" + //
-            "\r\n" + //
-            "C) Stocks are less risky than bonds\r\n" + //
-            "\r\n" + //
-            "D) Bonds are more liquid than stocks\r\n" + //
-            "" );
+            System.out.println("\tWhat is the difference between stocks and bonds?\r\n" + //
+                                    "\r\n" + //
+                                    "A) Stocks represent ownership in a company, while bonds represent debt\r\n" + //
+                                    "\r\n" + //
+                                    "B) Stocks pay fixed interest, while bonds pay dividends \r\n" + //
+                                    "\r\n" + //
+                                    "C) Stocks are less risky than bonds\r\n" + //
+                                    "\r\n" + //
+                                    "D) Bonds are more liquid than stocks\r\n" + //
+                                    "" );
 
              //Answer: A) Stocks represent ownership in a company, while bonds represent debt
         
@@ -258,14 +273,14 @@ public class Option3 {
 
             
               System.out.println("\n\tWhat is the difference between nominal interest rate and real interest rate? \r\n" + //
-                        "\r\n" + //
-                         "A) Nominal interest rate includes inflation, while real interest rate does not \r\n" + //
-                         "\r\n" + //
-                         "B) Real interest rate includes inflation, while nominal interest rate does not\r\n" + //
-                         "\r\n" + //
-                         "C) Nominal interest rate is adjusted for inflation, while real interest rate is not\r\n" + //
-                         "\r\n" + //
-                         "D) Nominal interest rate and real interest rate are the same\r\n" );
+                                    "\r\n" + //
+                                    "A) Nominal interest rate includes inflation, while real interest rate does not \r\n" + //
+                                    "\r\n" + //
+                                    "B) Real interest rate includes inflation, while nominal interest rate does not\r\n" + //
+                                    "\r\n" + //
+                                    "C) Nominal interest rate is adjusted for inflation, while real interest rate is not\r\n" + //
+                                    "\r\n" + //
+                                    "D) Nominal interest rate and real interest rate are the same\r\n" );
 
             //Answer: A) Nominal interest rate includes inflation, while real interest rate does not
 
@@ -276,15 +291,15 @@ public class Option3 {
 
             
                  System.out.println("\n\tWhat is the purpose of the Sharpe ratio? \r\n" + //
-                     "\r\n" + //
-                     "A) To measure the risk-adjusted _result = of an investment \r\n" + //
-                     "\r\n" + //
-                     "B) To calculate the total _result = of an investment \r\n" + //
-                     "\r\n" + //
-                     "C) To determine the liquidity of an investment\r\n" + //
-                     "\r\n" + //
-                    " D) To evaluate the long-term growth potential of an investment\r\n" + //
-                     "" );
+                                        "\r\n" + //
+                                        "A) To measure the risk-adjusted _result = of an investment \r\n" + //
+                                        "\r\n" + //
+                                        "B) To calculate the total _result = of an investment \r\n" + //
+                                        "\r\n" + //
+                                        "C) To determine the liquidity of an investment\r\n" + //
+                                        "\r\n" + //
+                                        " D) To evaluate the long-term growth potential of an investment\r\n" + //
+                                        "" );
 
                       //Answer: A) To measure the risk-adjusted _result = of an investment
 
@@ -294,6 +309,25 @@ public class Option3 {
             break;
 
             case 7:
+
+            System.out.println("\n What will the value of $500 be in 2 years with a discount rate of 5%? \r\n" + //
+            "\r\n" + //
+            "A) $454.55 \r\n" + //
+            "\r\n" + //
+            "B) $476.19\r\n" + //
+            "\r\n" + //
+            " C) $490.00 \r\n" + //
+            "\r\n" + //
+            "D) $510.00\r\n" + //
+            "" );
+                //Answer: A) $454.55
+
+            
+            
+            setCorrectAnswer("a");
+            break;
+
+            case 8:
 
             System.out.println("\n What will the value of $500 be in 2 years with a discount rate of 5%? \r\n" + //
             "\r\n" + //
@@ -378,15 +412,15 @@ public class Option3 {
 
             
          System.out.println("Which of the following is true about the Efficient Market Hypothesis (EMH)? \r\n" + //
-         "\r\n" + //
-         "A) It suggests that it is impossible to consistently outperform the market\r\n" + //
-         "\r\n" + //
-         " B) It suggests that markets are always perfectly efficient\r\n" + //
-         "\r\n" + //
-         " C) It suggests that markets are inefficient due to behavioral biases \r\n" + //
-         "\r\n" + //
-         "D) It suggests that markets are inefficient due to government regulations\r\n" + //
-         "");
+                                "\r\n" + //
+                                "A) It suggests that it is impossible to consistently outperform the market\r\n" + //
+                                "\r\n" + //
+                                " B) It suggests that markets are always perfectly efficient\r\n" + //
+                                "\r\n" + //
+                                " C) It suggests that markets are inefficient due to behavioral biases \r\n" + //
+                                "\r\n" + //
+                                "D) It suggests that markets are inefficient due to government regulations\r\n" + //
+                                "");
 
                 //Answer: A) It suggests that it is impossible to consistently outperform the market
 
@@ -436,7 +470,7 @@ public class Option3 {
             case 7:
 
             System.out.println("\n\tWhich of the following is NOT a characteristic of efficient markets according to the Random Walk Theory? \r\n" + //
-            "\r\n" + //
+            "\r\n" + //            
             "A) All available information is reflected in the current stock price \r\n" + //
             "\r\n" + //
             "B) Future stock price movements are unpredictable \r\n" + //
@@ -450,6 +484,23 @@ public class Option3 {
            
             setCorrectAnswer("c");
            break;     
+
+           case 8:
+
+            System.out.println("\n What will the value of $500 be in 2 years with a discount rate of 5%? \r\n" + //
+                                "\r\n" + //
+                                "A) $454.55 \r\n" + //
+                                "\r\n" + //
+                                "B) $476.19\r\n" + //
+                                "\r\n" + //
+                                " C) $490.00 \r\n" + //
+                                "\r\n" + //
+                                "D) $510.00\r\n" + //
+                                "" );
+                                    //Answer: A) $454.55
+
+            setCorrectAnswer("a");
+            break;
         }
     }
 

@@ -16,7 +16,7 @@ public class Option2 {
             
         public void beginner(){
                 
-            int randNumber = randomGenerator.nextInt(7);
+            int randNumber = randomGenerator.nextInt(7)+ 1;
     
               switch (randNumber) {
                 case 1:
@@ -127,6 +127,26 @@ public class Option2 {
                 break;
     
                 case 7:
+    
+                        System.out.println("What is the primary goal of investing?\r\n" + //
+                                        "\r\n" + //
+                                        "A) To never lose money \r\n" + //
+                                        "\r\n" + //
+                                        "B) To maximise returns while minimising risk\r\n" + //
+                                        "\r\n" + //
+                                        "C) To always beat the market \r\n" + //
+                                        "\r\n" + //
+                                        "D) To get rich quickly\r\n" + //
+                                        "\r\n"
+                                        );
+            
+            //Answers for B
+              
+                setCorrectAnswer("b");
+    
+                break;
+                
+                case 8:
     
                         System.out.println("What is the primary goal of investing?\r\n" + //
                                         "\r\n" + //
@@ -277,6 +297,21 @@ public class Option2 {
                 
                 setCorrectAnswer("b");
                 break;
+
+                case 8:
+    
+                System.out.println("\tWhat is alpha in investment?\r\n" + //
+                                "A) The return of the market index \r\n" + //
+                                "B) The return of a specific investment \r\n" + //
+                                "C) The excess return of an investment compared to its benchmark\r\n" + //
+                                "D) The risk associated with an investment\r\n" + //
+                                "" );
+
+                  //Answer: C) The excess return of an investment compared to its benchmark
+
+            
+
+                setCorrectAnswer("c");
                     
               }
         }
@@ -290,15 +325,15 @@ public class Option2 {
     
                 //Question 1
                 System.out.println("\tWhat is the Capital Market Line (CML) used for in portfolio theory?\r\n" + //
-                "\r\n" + //
-                "A) To determine the efficient frontier of a portfolio \r\n" + //
-                "\r\n" + //
-                "B) To calculate the expected return of an asset\r\n" + //
-                "\r\n" + //
-                "C) To evaluate the performance of mutual funds \r\n" + //
-                "\r\n" + //
-                "D)To represent the risk-return tradeoff for efficient portfolios\r\n" + //
-                "");
+                                    "\r\n" + //
+                                    "A) To determine the efficient frontier of a portfolio \r\n" + //
+                                    "\r\n" + //
+                                    "B) To calculate the expected return of an asset\r\n" + //
+                                    "\r\n" + //
+                                    "C) To evaluate the performance of mutual funds \r\n" + //
+                                    "\r\n" + //
+                                    "D)To represent the risk-return tradeoff for efficient portfolios\r\n" + //
+                                    "");
     
                 //Answer: D) To represent the risk-return tradeoff for efficient portfolios
                    
@@ -309,15 +344,15 @@ public class Option2 {
                 case 2:
     
                 System.out.println("\tWhat is the concept of Modern Portfolio Theory (MPT)?"+ //
-                "\r\n" + //
-                " A) It suggests that investors should focus only on individual stock selection \r\n" +//
-                "\r\n" + //
-                 "B)It emphasizes minimizing risk by holding a diversified portfolio of assets \r\n" + //
-                 "\r\n" + //
-                "C) It advocates for investing solely in high-risk, high-return assets \r\n" + //
-                "\r\n" + //
-                "D)  It recommends timing the market to maximize returns\r\n" + //
-                "" );
+                                    "\r\n" + //
+                                    " A) It suggests that investors should focus only on individual stock selection \r\n" +//
+                                    "\r\n" + //
+                                    "B)It emphasizes minimizing risk by holding a diversified portfolio of assets \r\n" + //
+                                    "\r\n" + //
+                                    "C) It advocates for investing solely in high-risk, high-return assets \r\n" + //
+                                    "\r\n" + //
+                                    "D)  It recommends timing the market to maximize returns\r\n" + //
+                                    "" );
       
                 //Answer: B) It emphasizes minimizing risk by holding a diversified portfolio of assets
                
@@ -328,16 +363,16 @@ public class Option2 {
                 case 3:
     
                 System.out.println("\tWhat is the difference between alpha and beta in the context of investment? \r\n" + //
-                "\r\n" + //
-                "A) Alpha measures the market risk of a portfolio, while beta measures the excess return of a portfolio compared to the market\r\n" + //
-                "\r\n" + //
-                " B) Alpha measures the excess return of a portfolio compared to the market, while beta measures the market risk of a portfolior\n" + //
-                "\r\n" + //
-                " C) Alpha measures the short-term volatility of a portfolio, while beta measures the long-term performance\r\n" + //
-                "\r\n" + //
-                " D) Alpha measures the absolute return of a portfolio, while beta measures the relative return\r\n" + //
-                "\r\n" + //
-                "");
+                                    "\r\n" + //
+                                    "A) Alpha measures the market risk of a portfolio, while beta measures the excess return of a portfolio compared to the market\r\n" + //
+                                    "\r\n" + //
+                                    " B) Alpha measures the excess return of a portfolio compared to the market, while beta measures the market risk of a portfolior\n" + //
+                                    "\r\n" + //
+                                    " C) Alpha measures the short-term volatility of a portfolio, while beta measures the long-term performance\r\n" + //
+                                    "\r\n" + //
+                                    " D) Alpha measures the absolute return of a portfolio, while beta measures the relative return\r\n" + //
+                                    "\r\n" + //
+                                    "");
     
                 //Answer: B) Alpha measures the excess return of a portfolio compared to the market, while beta measures the market risk of a portfolio
                
@@ -349,16 +384,16 @@ public class Option2 {
     
                 
              System.out.println("Which of the following is true about the Efficient Market Hypothesis (EMH)? \r\n" + //
-             "\r\n" + //
-             "A) It suggests that it is impossible to consistently outperform the market\r\n" + //
-             "\r\n" + //
-             " B) It suggests that markets are always perfectly efficient\r\n" + //
-             "\r\n" + //
-             " C) It suggests that markets are inefficient due to behavioral biases \r\n" + //
-             "\r\n" + //
-             "D) It suggests that markets are inefficient due to government regulations\r\n" + //
-             "");
-    
+                                "\r\n" + //
+                                "A) It suggests that it is impossible to consistently outperform the market\r\n" + //
+                                "\r\n" + //
+                                " B) It suggests that markets are always perfectly efficient\r\n" + //
+                                "\r\n" + //
+                                " C) It suggests that markets are inefficient due to behavioral biases \r\n" + //
+                                "\r\n" + //
+                                "D) It suggests that markets are inefficient due to government regulations\r\n" + //
+                                "");
+                        
                     //Answer: A) It suggests that it is impossible to consistently outperform the market
     
                    
@@ -421,11 +456,28 @@ public class Option2 {
                
                 
                 setCorrectAnswer("b");
+
               break;
+
+              
+              case 8:
     
-                default:
-                    
-              }
+              System.out.println("\tWhat is the role of a hedge fund manager in portfolio management? \r\n" + //
+                                    "\r\n" + //
+                                    "A) To manage a diversified portfolio of assets on behalf of individual investors \r\n" + //
+                                    "\r\n" + //
+                                    "B) To implement high-risk trading strategies to generate above-average returns \r\n" + //
+                                    "\r\n" + //
+                                    "C)  To provide investment advice to retail investors \r\n" + //
+                                    "\r\n" + //
+                                    "D) To minimize risk by hedging against adverse market movements\r\n" + //
+                                    "" );
+  
+              
+                    setCorrectAnswer("c");
+                break;
+    
+            }
 
     
         }

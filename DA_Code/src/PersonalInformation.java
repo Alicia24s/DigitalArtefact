@@ -1,3 +1,5 @@
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PersonalInformation {
@@ -24,14 +26,41 @@ public class PersonalInformation {
        // Sets and stores users personal information
             System.out.println("\nFirstName:");
                String firstname = scanner.nextLine();
+            // error handling so that firstname cant be empty
+               while (firstname.isEmpty()) {
+                  System.out.println("Error: Firstname cannot be empty - Please try again:");
+                  firstname = scanner.nextLine();
+              }
                set_firstname(firstname);
        
             System.out.println("\nSurname:");
                String surname = scanner.nextLine();
+               // error handling so that surname cant be empty
+               while (surname.isEmpty()) {
+                  System.out.println("Error: Surname cannot be empty - Please try again:");
+                  surname = scanner.nextLine();
+              }
                set_surname(surname);
        
             System.out.println("\nAge:");
-                int years = scanner.nextInt();
+            
+                int years = 0;
+                boolean validAge = false;
+        
+                while (!validAge) {
+                    try {
+                        years = scanner.nextInt();
+                        if (years < 0) {
+                            System.out.println("Invalid age please try again:");
+                        } else {
+                            validAge = true;
+                        }
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Please enter a valid age:");
+                        scanner.nextLine(); // Clear the invalid input from the scanner
+                    }
+                }
+               
                 set_years(years);
 
             scanner.nextLine();
