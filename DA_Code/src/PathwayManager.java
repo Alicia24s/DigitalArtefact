@@ -1,4 +1,6 @@
-
+/*Overview of this class
+ * 
+ */
 
 public class PathwayManager {
 
@@ -6,7 +8,7 @@ public class PathwayManager {
 
     public void QuestionnaireOverview(){
 
-        System.out.println("This assessment will score you on your financial knowledge in your chosen topic\r\n" + //
+        System.out.println("\r\nThis assessment will score you on your financial knowledge in your chosen topic\r\n" + //
                         "\r\n" + //
                         "The questions range between beginner, intermediate, and advanced.\r\n" + //
                         "\r\n" + //
@@ -23,7 +25,7 @@ public class PathwayManager {
     public void option1(int option){
         
         //Basic Financial Concepts
-        System.out.println("You have chosen option" + option );
+        System.out.println("You have chosen option" + option + ": Basic financial concepts");
         QuestionnaireOverview();
         optionManager.option1();
    
@@ -32,7 +34,7 @@ public class PathwayManager {
     public void option2(int option){
 
         //Investment and Portfolio Assessment
-        System.out.println("You have chosen option" + option);
+        System.out.println("You have chosen option" + option + ": Investment and Portfolio");
         QuestionnaireOverview();
         optionManager.option2();
 
@@ -41,7 +43,7 @@ public class PathwayManager {
     public void option3(int option){
 
         //Financial Literacy Assessment
-        System.out.println("You have chosen option" + option);
+        System.out.println("You have chosen option" + option + ": Financial literacy");
         QuestionnaireOverview();
         optionManager.option3();   
 
@@ -50,7 +52,7 @@ public class PathwayManager {
     public void option4(int option){
         
         //Corporate finance Assessment
-        System.out.println("You have chosen option" + option);
+        System.out.println("You have chosen option" + option + ": Corporate finance");
         QuestionnaireOverview();
         optionManager.option4();
        

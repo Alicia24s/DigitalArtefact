@@ -54,15 +54,14 @@ public class OptionManager extends scoreManager{
                     String answer = scanner.nextLine();
                     String usersAnswer = answer.toLowerCase();
 
-
-                                if(usersAnswer.equals(option1.getCorrectAnswer())) {   
+                        if(usersAnswer.equals(option1.getCorrectAnswer())) {   
                             
-                                    scoreManager.rightAnswer(true, false, false);
+                                scoreManager.rightAnswer(true, false, false);
                                     number = 2;
                                     
-                                    } else{
-
-                                           
+                                } else{
+                                      
+                                    scoreManager.wrongAnswer(); 
                                             number = 1;
                                         }
                      
@@ -81,18 +80,16 @@ public class OptionManager extends scoreManager{
                                     scoreManager.rightAnswer(false, true, false);
                                     number = 3;
                                 
-                                    
                                     } else{
-                                        number = 1;
+
+                                        scoreManager.wrongAnswer(); 
+                                          number = 1;
                                         }
-
-
-               
+        
                 counter++;
 
                 break;
                 
-            
                    case 3:
 
                    option1.advanced();
@@ -133,7 +130,7 @@ public void option2(){
       switch (number){
              case 1: //beginner
            
-    
+            option2.beginner();
               String answer = scanner.nextLine();
               String usersAnswer = answer.toLowerCase();
 
@@ -199,6 +196,8 @@ public void option2(){
       }
       
   }while(counter <8);
+
+  scoreManager.printScoreRecord();
 }
 
 public void option3(){
@@ -222,9 +221,8 @@ public void option3(){
                                 number = 2;
                                 
                                 } else{
-
-                                       
                                         number = 1;
+                                        scoreManager.wrongAnswer();
                                     }
        
             counter++;
@@ -242,9 +240,9 @@ public void option3(){
                                 number = 3;
                                 
                                 } else{
-                                
-   
+
                                     number = 1;
+                                    scoreManager.wrongAnswer();
                                     }
            
             counter++;
@@ -263,7 +261,8 @@ public void option3(){
                             number = 3;
                             
                             }else{
-                        
+                                 
+                                scoreManager.wrongAnswer();
                                 number = 2;
                             }
            
@@ -278,7 +277,7 @@ public void option3(){
 
     }while(counter <8);
 
-
+    scoreManager.printScoreRecord();
 }
 
 public void option4(){
@@ -305,7 +304,7 @@ public void option4(){
                                 
                                 } else{
 
-                                       
+                                    scoreManager.wrongAnswer();
                                         number = 1;
                                     }
            
@@ -325,7 +324,7 @@ public void option4(){
                                 
                                 } else{
                                 
-   
+                                    scoreManager.wrongAnswer();
                                     number = 1;
                                     }
            
@@ -359,7 +358,8 @@ public void option4(){
         scanner.nextLine();
 
     }while(counter <8);
-
+    
+    scoreManager.printScoreRecord();
 }
 
 
