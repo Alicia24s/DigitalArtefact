@@ -11,7 +11,6 @@ import java.util.Scanner;
         
         Scanner scanner = new Scanner(System.in);
 
-        //Lab 3 & Lab 4
         boolean finished;
         
         do{
@@ -29,7 +28,7 @@ import java.util.Scanner;
 
                     }while(!rightDetails);
              
-        // use of array 50-59
+        // array to store options
         String optionNames[] = {
             " 1 Basic Finance Concepts",
             " 2 Investment and Portfolio Management",
@@ -37,7 +36,7 @@ import java.util.Scanner;
             " 4 Corporate finance"
         };
 
-           
+          
         System.out.println("\nPlease select (1-4)");
         for (int i = 0; i < optionNames.length; i++) {
             System.out.println("Option" + optionNames[i]);
