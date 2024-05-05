@@ -5,7 +5,7 @@
 ## DigitalArtefactLogic.java
 
 - Holds the sequencial to the entire assessment and puts the code in order
-
+- Hits feature set 1 - error handling/custom exceptions
 ## Pathway manager
 
 - gives the user an overview of how the assessment works ad calls the users chosen assessment option
@@ -22,6 +22,7 @@ from OptionManager.java
 
 ## scoreManager.java
 
+- Hits Feature set 1 data objects
 - Records of users scores
 - provides output dependant on whether the user got a question right or wrong
 - gives a score at the end of the quiz to show thew user how they did
@@ -39,3 +40,5 @@ is divided into 3 methods in each class
 ## Test.java
 
 - runs unit test on the pathwaysManager options to make sure the questions are called correctly
+
+(Hit feature two multiple times with classes, inheritance and encapsulation)
