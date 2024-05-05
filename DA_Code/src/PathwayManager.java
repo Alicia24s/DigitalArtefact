@@ -1,61 +1,62 @@
-/*Overview of this class
+/*Overview of this class is in Documentation.md
  * 
  */
 
 public class PathwayManager {
 
-    OptionManager optionManager = new OptionManager();
+        // Object for the class that controls the assessments and their logic
+        OptionManager optionManager = new OptionManager();
 
-    public void QuestionnaireOverview(){
+        public void QuestionnaireOverview(){
 
-        System.out.println("\r\nThis assessment will score you on your financial knowledge in your chosen topic\r\n" + //
-                        "\r\n" + //
-                        "The questions range between beginner, intermediate, and advanced.\r\n" + //
-                        "\r\n" + //
-                        "The questions will increase and decrease in difficulty dependant on  correct and incorrect answers\r\n" + //
-                        "It is multiple choice (A-B)");
+                System.out.println("\r\nThis assessment will score you on your financial knowledge in your chosen topic\r\n" + //
+                                "\r\n" + //
+                                "The questions range between beginner, intermediate, and advanced.\r\n" + //
+                                "\r\n" + //
+                                "The questions will increase and decrease in difficulty dependant on  correct and incorrect answers\r\n" + //
+                                "It is multiple choice (A-D)");
 
+                
+                System.out.println("Time: Unlimited");
+                System.out.println("Questions: 10\r\n");
+
+            }
         
-        System.out.println("Time: Unlimited");
-        System.out.println("Questions: 10\r\n");
-        System.out.println("");
-    }
-
-    //Option pathways 
-    public void option1(int option){
         
-        //Basic Financial Concepts
-        System.out.println("You have chosen option" + option + ": Basic financial concepts");
-        QuestionnaireOverview();
-        optionManager.option1();
-   
-    }
+        //Basic Financial Concepts assessment
+        public void option1(int option){
+            
+                System.out.println("You have chosen option" + option + ": Basic financial concepts");
+                QuestionnaireOverview();
+                optionManager.option1();
         
-    public void option2(int option){
-
+            }
+        
         //Investment and Portfolio Assessment
-        System.out.println("You have chosen option" + option + ": Investment and Portfolio");
-        QuestionnaireOverview();
-        optionManager.option2();
+        public void option2(int option){
+                
+                System.out.println("You have chosen option" + option + ": Investment and Portfolio");
+                QuestionnaireOverview();
+                optionManager.option2();
 
-    }
-
-    public void option3(int option){
+            }
 
         //Financial Literacy Assessment
-        System.out.println("You have chosen option" + option + ": Financial literacy");
-        QuestionnaireOverview();
-        optionManager.option3();   
+        public void option3(int option){
 
-    }
-    
-    public void option4(int option){
-        
+                System.out.println("You have chosen option" + option + ": Financial literacy");
+                QuestionnaireOverview();
+                optionManager.option3();   
+
+            }
+
         //Corporate finance Assessment
-        System.out.println("You have chosen option" + option + ": Corporate finance");
-        QuestionnaireOverview();
-        optionManager.option4();
-       
-    }
+        public void option4(int option){
+                
+                System.out.println("You have chosen option" + option + ": Corporate finance");
+                QuestionnaireOverview();
+                optionManager.option4();
+            
+            }
 
 }

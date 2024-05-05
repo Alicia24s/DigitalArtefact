@@ -4,17 +4,11 @@ import java.util.Scanner;
 
 public class PersonalInformation {
 
-      /* Class to hold the getters and setters for user's collected personal information 
-            *eg. you've taken their email and need to return encrypted version
-            *(You'll give the user an option to refactor these in the logic)
-      */
 
       /*
-      * Holds users personal info
+      * Class Holds users personal info
       *
-      * Gives the user a chance to refactor their personal information in DigitalArtifact
-      .Java by returning encrypted personal info)
-      * 
+      * Gives the user a chance to refactor their personal information in DigitalArtifact.Java 
       */
       private String _firstname;
       private String _surname;
@@ -26,7 +20,10 @@ public class PersonalInformation {
        // Sets and stores users personal information
             System.out.println("\nFirstName:");
                String firstname = scanner.nextLine();
+
+
             // error handling so that firstname cant be empty
+              //Added after integration test because users name was allowed to be blank
                while (firstname.isEmpty()) {
                   System.out.println("Error: Firstname cannot be empty - Please try again:");
                   firstname = scanner.nextLine();
@@ -35,7 +32,8 @@ public class PersonalInformation {
        
             System.out.println("\nSurname:");
                String surname = scanner.nextLine();
-               // error handling so that surname cant be empty
+            
+               //Added after integration test because users surname was allowed to be blank
                while (surname.isEmpty()) {
                   System.out.println("Error: Surname cannot be empty - Please try again:");
                   surname = scanner.nextLine();
@@ -46,8 +44,11 @@ public class PersonalInformation {
             
                 int years = 0;
                 boolean validAge = false;
-        
-                while (!validAge) {
+                 
+              // error handling:
+              // added after integration test because code broke when passing string instead of int
+  
+              while (!validAge) {
                     try {
                         years = scanner.nextInt();
                         if (years < 0) {

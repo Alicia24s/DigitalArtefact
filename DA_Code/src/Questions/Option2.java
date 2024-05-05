@@ -403,35 +403,32 @@ public class Option2 {
     
                 case 5:
     
-                System.out.println("1.\tWhich of the following is NOT a factor affecting the Black-Scholes option pricing model? \r\n" + //
-                "\r\n" + //
-                "A) Strike price \r\n" + //
-                "\r\n" + //
-                "B) Dividend yield \r\n" + //
-                "\r\n" + //
-                "C) Time to expiration \r\n" + //
-                "\r\n" + //
-                "D) Risk-free rate\r\n" + //
-                "" );
-    
-                //Answer: B) Dividend yield
-     
+                System.out.println("\tWhich of the following is NOT a factor affecting the Black-Scholes option pricing model? \r\n" + //
+                                    "\r\n" + //
+                                    "A) Strike price \r\n" + //
+                                    "\r\n" + //
+                                    "B) Dividend yield \r\n" + //
+                                    "\r\n" + //
+                                    "C) Time to expiration \r\n" + //
+                                    "\r\n" + //
+                                    "D) Risk-free rate\r\n" + //
+                                    "" );
     
                 setCorrectAnswer("b");
                 break;
     
                 case 6:
     
-                System.out.println("2.\tWhat is the primary purpose of financial leverage? \r\n" + //
-                "\r\n" + //
-                "A) To increase the risk of a firm's operations\r\n" + //
-                "\r\n" + //
-                " B) To decrease the volatility of a firm's earnings \r\n" + //
-                "\r\n" + //
-                "C) To increase the result = on equity for shareholders \r\n" + //
-                "\r\n" + //
-                "D) To decrease the cost of debt financing for a firm\r\n" + //
-                "" );
+                        System.out.println("\tWhat is the primary purpose of financial leverage? \r\n" + //
+                                            "\r\n" + //
+                                            "A) To increase the risk of a firm's operations\r\n" + //
+                                            "\r\n" + //
+                                            " B) To decrease the volatility of a firm's earnings \r\n" + //
+                                            "\r\n" + //
+                                            "C) To increase the result = on equity for shareholders \r\n" + //
+                                            "\r\n" + //
+                                            "D) To decrease the cost of debt financing for a firm\r\n" + //
+                                            "" );
     
                 //Answer: C) To increase the result = on equity for shareholders
                
@@ -441,17 +438,17 @@ public class Option2 {
     
                 case 7:
     
-                System.out.println("2.\tWhat is the role of a hedge fund manager in portfolio management? \r\n" + //
-                "\r\n" + //
-                "A) To manage a diversified portfolio of assets on behalf of individual investors \r\n" + //
-                "\r\n" + //
-                "B) To implement high-risk trading strategies to generate above-average returns \r\n" + //
-                "\r\n" + //
-                "C)  To provide investment advice to retail investors \r\n" + //
-                "\r\n" + //
-                "D) To minimize risk by hedging against adverse market movements\r\n" + //
-                "" );
-    
+                        System.out.println("\tWhat is the role of a hedge fund manager in portfolio management? \r\n" + //
+                                            "\r\n" + //
+                                            "A) To manage a diversified portfolio of assets on behalf of individual investors \r\n" + //
+                                            "\r\n" + //
+                                            "B) To implement high-risk trading strategies to generate above-average returns \r\n" + //
+                                            "\r\n" + //
+                                            "C)  To provide investment advice to retail investors \r\n" + //
+                                            "\r\n" + //
+                                            "D) To minimize risk by hedging against adverse market movements\r\n" + //
+                                            "" );
+                        
                 //Answer: C) Investors can consistently earn above-average result =s
                
                 
@@ -468,7 +465,7 @@ public class Option2 {
                                     "\r\n" + //
                                     "B) To implement high-risk trading strategies to generate above-average returns \r\n" + //
                                     "\r\n" + //
-                                    "C)  To provide investment advice to retail investors \r\n" + //
+                                    "C) To provide investment advice to retail investors \r\n" + //
                                     "\r\n" + //
                                     "D) To minimize risk by hedging against adverse market movements\r\n" + //
                                     "" );
