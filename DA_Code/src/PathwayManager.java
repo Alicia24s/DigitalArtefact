@@ -23,12 +23,13 @@ public class PathwayManager {
             }
         
         
-        //Basic Financial Concepts assessment
+        //Called to send the user down their chosen pathway
         public void optionPathways(int option){
             
             switch(option){
 
                 case 1: 
+                //Basic Financial Concepts assessment
                 System.out.println("You have chosen option" + option + ": Basic financial concepts");
                 QuestionnaireOverview();
                 optionManager.option1();
@@ -37,12 +38,15 @@ public class PathwayManager {
 
                 case 2:
                     
+                //Investment and portfolio assessment
                 System.out.println("You have chosen option" + option + ": Investment and Portfolio");
                 QuestionnaireOverview();
                 optionManager.option2();
                 break;
 
                 case 3:
+
+                //Financial Literacy assessment
                 System.out.println("You have chosen option" + option + ": Financial literacy");
                 QuestionnaireOverview();
                 optionManager.option3();
@@ -51,6 +55,7 @@ public class PathwayManager {
 
                 case 4:
 
+                // Corporate finance questions
                 System.out.println("You have chosen option" + option + ": Corporate finance");
                 QuestionnaireOverview();
                 optionManager.option4();

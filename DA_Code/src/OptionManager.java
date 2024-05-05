@@ -198,7 +198,7 @@ import Questions.Option4;
          }
 
       public void option3(){
-               //same code as the one in option1() but tailor to option 
+               //same code as the one in option1() but tailored to option 3 
                            
                int counter = 0;       
                int difficulty = 1;

@@ -26,11 +26,15 @@ from OptionManager.java
 - provides output dependant on whether the user got a question right or wrong
 - gives a score at the end of the quiz to show thew user how they did
 
-## Package - Questions/ Option1-4.java 
+## Package: Questions
 
-- Package Questions - Holds questions each option where the question difficulty level 
+-Holds questions each option where the question difficulty level 
 is divided into 3 methods in each class
 
+- Option1.java - Basic financial concepts
+- Option2.java - Investment and portfolio
+- Option3.java - Financial Literacy
+- Option4.java - Corporate finance
 
 ## Test.java
 

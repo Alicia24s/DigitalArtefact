@@ -2,16 +2,8 @@ package Questions;
 import java.util.Random;
 
 public class Option3 {
-/*
- * THERE ARE PLACEHOLDER QUESTIONS IN HERE PLEASE CHANGE THEM IN LINE WITH THE TOPIC INSIDE OF 
- * PathwaysManager.java
- * 
- */
-    /*
-     * Questions for option 1 - basic financial concepts
-     * 
-     */
- // mAKe a random number from 1 to 8 andd then put it into the switch statement 
+
+    //financial literacy questions
 
  private Random randomGenerator = new Random();
 

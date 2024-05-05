@@ -1,3 +1,4 @@
+//See Documentation.md for more information about this class
 
 public class scoreManager {
 
