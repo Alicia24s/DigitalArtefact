@@ -181,7 +181,7 @@ public class Option1{
 
     public void intermediate(){
 
-        int randNumber = randomGenerator.nextInt(7);
+        int randNumber = randomGenerator.nextInt(7)+1;
 
         switch (randNumber) {
         
@@ -309,7 +309,7 @@ public class Option1{
     
     public void advanced(){
 
-        int randNumber = randomGenerator.nextInt(7);
+        int randNumber = randomGenerator.nextInt(7)+ 1;
 
         switch (randNumber) {
             case 1:

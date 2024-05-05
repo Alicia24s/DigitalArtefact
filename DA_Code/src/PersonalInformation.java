@@ -25,7 +25,7 @@ public class PersonalInformation {
             // error handling so that firstname cant be empty
               //Added after integration test because users name was allowed to be blank
                while (firstname.isEmpty()) {
-                  System.out.println("Error: Firstname cannot be empty - Please try again:");
+                  System.out.println("Error: Firstname cant be empty - Please try again:");
                   firstname = scanner.nextLine();
               }
                set_firstname(firstname);
@@ -35,7 +35,7 @@ public class PersonalInformation {
             
                //Added after integration test because users surname was allowed to be blank
                while (surname.isEmpty()) {
-                  System.out.println("Error: Surname cannot be empty - Please try again:");
+                  System.out.println("Error: Surname cant be empty - Please try again:");
                   surname = scanner.nextLine();
               }
                set_surname(surname);
@@ -52,13 +52,14 @@ public class PersonalInformation {
                     try {
                         years = scanner.nextInt();
                         if (years < 0) {
-                            System.out.println("Invalid age please try again:");
+                            System.out.println("please try again:");
                         } else {
                             validAge = true;
                         }
                     } catch (InputMismatchException e) {
-                        System.out.println("Invalid input. Please enter a valid age:");
-                        scanner.nextLine(); // Clear the invalid input from the scanner
+                        System.out.println("Please enter a valid age:");
+                        // Clears the invalid input from the scanner
+                        scanner.nextLine(); 
                     }
                 }
                
@@ -70,7 +71,7 @@ public class PersonalInformation {
                 String email = scanner.nextLine();
                 set_email(email);
        
-       
+       //Prints users entered details from the scanner
            System.out.println("\n Your recorded details are as follows:");
            System.out.println("\nfirstname: " + get_firstname());         
            System.out.println("surname: " + get_surname());

@@ -24,39 +24,40 @@ public class PathwayManager {
         
         
         //Basic Financial Concepts assessment
-        public void option1(int option){
+        public void optionPathways(int option){
             
+            switch(option){
+
+                case 1: 
                 System.out.println("You have chosen option" + option + ": Basic financial concepts");
                 QuestionnaireOverview();
                 optionManager.option1();
-        
-            }
-        
-        //Investment and Portfolio Assessment
-        public void option2(int option){
-                
+
+                break;
+
+                case 2:
+                    
                 System.out.println("You have chosen option" + option + ": Investment and Portfolio");
                 QuestionnaireOverview();
                 optionManager.option2();
+                break;
 
-            }
-
-        //Financial Literacy Assessment
-        public void option3(int option){
-
+                case 3:
                 System.out.println("You have chosen option" + option + ": Financial literacy");
                 QuestionnaireOverview();
-                optionManager.option3();   
+                optionManager.option3();
 
-            }
+                break;
 
-        //Corporate finance Assessment
-        public void option4(int option){
-                
+                case 4:
+
                 System.out.println("You have chosen option" + option + ": Corporate finance");
                 QuestionnaireOverview();
                 optionManager.option4();
-            
-            }
 
-}
+                break;
+        
+            }
+        
+        }
+    }

@@ -312,6 +312,7 @@ public class Option2 {
             
 
                 setCorrectAnswer("c");
+                break;
                     
               }
         }

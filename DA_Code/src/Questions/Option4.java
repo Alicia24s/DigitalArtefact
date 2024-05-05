@@ -17,7 +17,7 @@ public class Option4{
 
  private Random randomGenerator = new Random();
 
- public String _result;
+ protected String _result;
 
     
  public void setCorrectAnswer(String _result){

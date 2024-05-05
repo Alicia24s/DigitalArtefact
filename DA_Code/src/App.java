@@ -4,7 +4,15 @@ public class App{
 
         //Runs entire program
         DigitalArtifact digitalArtifact = new DigitalArtifact();
-            digitalArtifact.questionnaire();
+        digitalArtifact.questionnaire();
                  
+       
+        /*
+         * Testing - for the option pathways so they run smoothly:
+         * 
+         * Test Testing = new Test();
+         * Testing.testOption();
+         * 
+         */
     }
 }
