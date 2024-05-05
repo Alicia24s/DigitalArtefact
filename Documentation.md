@@ -31,3 +31,7 @@ from OptionManager.java
 - Package Questions - Holds questions each option where the question difficulty level 
 is divided into 3 methods in each class
 
+
+## Test.java
+
+- runs unit test on the pathwaysManager options to make sure the questions are called correctly
